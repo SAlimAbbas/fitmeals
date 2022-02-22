@@ -1,0 +1,56 @@
+body{
+    font-family:open sans;
+}
+#img1 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 600px;
+    background-image: url(https://www.fitmeals.co.in/wp-content/uploads/2018/02/SLIDE_01.jpg);
+    background-size: cover;
+}
+#img2 {
+    display: flex;
+    flex-wrap: wrap;
+    height: 600px;
+    background-image: url(https://www.fitmeals.co.in/wp-content/uploads/2018/02/SLIDE_02.jpg);
+    background-size: cover;    
+}
+#img3 {
+    display: flex;
+    flex-wrap: wrap;
+    height: 600px;
+    background-image: url(https://www.fitmeals.co.in/wp-content/uploads/2018/02/SLIDE_03.jpg);
+    background-size: cover;
+}  
+  .pbtn {
+    color: grey;
+    width:50px;
+    border:2px solid gray;
+    height:40px;
+    border-radius: 100px;
+    text-align: center;
+  }
+  .nbtn {
+    color: grey;
+    width:50px;
+    border:2px solid gray;
+    height:40px;
+    border-radius: 100px;
+    text-align: center;
+  }
+  #content {
+      display: flex;
+      justify-content: space-between;
+  }
+  #ptag{
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    background-color: transparent;
+  }
+  #para{
+      width: 50%;
+      margin:auto;
+      text-align: justify;
+  }

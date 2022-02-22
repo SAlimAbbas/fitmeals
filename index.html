@@ -4,9 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
+    <link rel="stylesheet" href="./Style/index.css">
 </head>
 <body>
-    <h1>FitMeals</h1>
+    <div id="slider">
+        
+        <div id="items">
+          <div id="img1">
+            <div id="content">
+                <div onclick="prev()" class="pbtn"><</div>
+                
+                <div onclick="next()" class="nbtn">></div>
+              </div>
+            </div>
+          <div id="img2">
+            <div id="content">
+                <div onclick="prev()" class="pbtn"><</div>
+                <div onclick="next()" class="nbtn">></div>
+              </div>
+            </div>
+          <div id="img3">
+              <div id="content">
+                <div onclick="prev()" class="pbtn"><</div>
+                <p id="ptag">Consult our nutritionists and get a diet plan designed specifically for you. </p>
+                <div onclick="next()" class="nbtn">></div>
+              </div>
+            </div>
+        </div>
+        
+      </div>
+        <div id="paratag">
+            <h1 style="text-align:center">It's not just food,</h1>
+            <h1 style="text-align:center;color:green;font-family: Fira Sans', sans-serif;">It's a lifestyle!</h1>
+            <p id="para">We break the stereotype ‘healthy eating is boring”. Reach your weight, health and workout goals with deliciously healthy food. We have various diet plans customised to suit your specific health and weight requirements. With a new changing menu every week, we bring to you food from various cuisines, with a healthy twist. We make healthy eating fun and effortless!</p>
+        </div>
 </body>
+<script src="./Script/index.js"></script>
 </html>
