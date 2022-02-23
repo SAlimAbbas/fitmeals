@@ -32,3 +32,12 @@ function showItem() {
 }
 
 showItem();
+
+
+document.querySelector("#downloadBtn").addEventListener("click",function() {
+  window.location.href="https://play.google.com/store/apps/details?id=com.zoconut.fitmeals&hl=en&gl=US";
+})
+
+document.querySelector("#WLMP").addEventListener("click",function() {
+  
+})
