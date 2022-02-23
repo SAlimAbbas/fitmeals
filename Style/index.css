@@ -145,6 +145,8 @@ body{
   }
   #content2{
     background-color:#f3f5ed;
+    padding-top:50px;
+    text-align:center;
   }
 
   #rotateimg{
@@ -152,16 +154,16 @@ body{
     border-radius:50%;
     justify-content:center;
     width:90%;
+    padding-top: 50px;
     margin: auto;
     overflow: hidden;
   }
   #rotateimg:hover{
     border-radius:50%;
-    
-    width:90%;
-
-    animation: mymove 20s infinite;
     overflow: hidden;
+    width:90%;
+     background-repeat: repeat;
+    animation: mymove 20s infinite;
   }
   @keyframes mymove {
     100% {transform: rotate(360deg);}
@@ -173,7 +175,7 @@ body{
      background-color:#8ec038;
      padding-top:100px;
      border-radius: 50px;
-     margin-top:-300px;
+     margin-top:100px;
      background-image:url(https://www.fitmeals.co.in/wp-content/uploads/2019/10/nutrion-left.png)
    }
    #info{
@@ -190,14 +192,27 @@ body{
    #plan{
      display: flex;
      justify-content:center;
+     flex-wrap: wrap;
      justify-content: space-around;
    }
    #plan>div{
     text-align: center;
      border-radius: 50px;
+     color:black;
+     height:30px;
+     width:190px;
+     margin-bottom: 20px;
+     padding-top:15px ;
+   }
+
+   #plan > div:hover{
+    text-align: center;
+     border-radius: 50px;
      color:#8ec038;
      height:30px;
-     width:170px;
+     width:190px;
+     animation-play-state: paused;
+     margin-bottom: 20px;
      border:2px solid #8ec038;
      padding-top:15px ;
    }
@@ -224,8 +239,9 @@ body{
 
 #imgl1 {
   background-color: transparent;
-  width: 300px;
-  height: 300px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
   perspective: 1000px;
 }
 
@@ -238,4 +254,28 @@ body{
 #imgl1:hover {
   transform: rotateY(180deg);
   transform:rotateY(180deg)
+}
+#btnPlan{
+       height:62.4px;
+       width:200px;
+       border-radius:50px;
+       background-color: #da2424;
+       font-size:19px;
+       box-sizing: border-box;
+       border: 2px solid #da2424;
+       margin: auto;
+       font-family:'Fira Sans',serif;
+       color:white;
+}
+#btnPlan:hover{
+  height:62.4px;
+  width:200px;
+  border-radius:50px;
+  background-color:black;
+  font-size:20px;
+  box-sizing: border-box;
+  border: 2px solid black;
+  margin: auto;
+  font-family:'Fira Sans',serif;
+  color:white;
 }
