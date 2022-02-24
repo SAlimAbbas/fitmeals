@@ -72,9 +72,8 @@ body{
       padding-top: 230px;
   }
   #ptag{
-    font-size: 20px;
-    font-family: 'fira Sans';
-    font-weight: 600;
+    font-size: 16px;
+    font-family: 'Fira Sans', sans-serif;
     text-align:center;
     margin-top:-30px;
     color:white;   
@@ -85,7 +84,7 @@ body{
     font-size: 80px;
     color: whitesmoke;
     font-weight: bold;
-    font-family: 'fira Sans';
+    font-family: 'Fira Sans', sans-serif;
     margin-top: -100px;
   }
 
@@ -172,11 +171,12 @@ body{
     width:90%;
     padding-top: 50px;
     margin: auto;
-    overflow: hidden;
+    
   }
   #rotateimg:hover{
     border-radius:50%;
     overflow: hidden;
+    
     width:90%;
      background-repeat: no-repeat;
     animation: mymove 20s infinite;
@@ -186,12 +186,13 @@ body{
    }
 
    #float{
+     
      width:100%;
      height: 800px;
      background-color:#8ec038;
      padding-top:100px;
      /* border-radius: 50px; */
-     margin-top:100px;
+     margin-top:-50px;
      background-image:url(https://www.fitmeals.co.in/wp-content/uploads/2019/10/nutrion-left.png)
    }
    #info{
@@ -298,7 +299,7 @@ body{
 
 #scrollbar{
             background-size: cover;
-            background:linear-gradient(rgba(14, 13, 13, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.jdmagicbox.com/comp/pune/w6/020pxx20.xx20.160918000011.d5w6/catalogue/foodfuel-vadgaon-sheri-pune-home-delivery-restaurants-39i3go5.jpg?clr=#662600);
+            background:linear-gradient(rgba(14, 13, 13, 0.5), rgba(0, 0, 0, 0.5)), url(https://www.fitmeals.co.in/wp-content/uploads/2018/02/trial_parallax.jpg);
             background-attachment: fixed;
             /* background-color: var(--black); */
             height: 500px;
@@ -370,4 +371,66 @@ body{
   transition: 1s linear;
   /* border: 2px solid rgb(143, 140, 140); */
   margin: auto;
+}
+#uppernav{
+  display: flex;
+  border-top: 0.2px solid grey;
+  border-bottom: 0.2px solid grey;
+  justify-content:space-between;
+  width: 100%;
+  height: 40px;
+  margin-top:-5px;
+  font-size:14.5px;
+  font-weight:400;
+  font-family: 'Fira Sans',serif;
+}
+#leftnav{
+  display: flex;
+  width:600px;
+  padding-top:9px;
+  padding-left: 45px;
+  justify-content:space-between;
+  
+}
+#rightnav{
+  display: flex;
+  width:150px;
+  padding-top:9px;
+  padding-right: 30px;
+  justify-content:space-between;
+  
+}
+#icon{
+  font-size:18px;
+  color:#8ec038;
+}
+
+#container{
+  display: flex;
+  justify-content: space-around;
+  height:100px;
+}
+#link{
+  display: flex;
+  width:700px;
+  justify-content:space-around;
+  padding-top:20px;
+  font-size:14px;
+}
+
+#imglogo{
+  width:80px;
+  height:41px;
+  margin-top:25px;
+}
+#callbtn{
+  height:48px;
+  width:189px;
+  border-radius:25px;
+  background-color:#da2424;
+  border: #da2424;
+  font-size: 16px;
+  margin-top:25px;
+  color:white;
+  font-family: 'Fira Sans'serif;
 }
