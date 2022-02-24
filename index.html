@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .container{
+            display: flex;
+            height: 100px;
+            justify-content: space-around;
+            background-color:rgb(253, 255, 240); 
+            font-weight: bolder;
+           position: fixed;
+            margin: auto;
+            width: 100%;
+            
+        }
+        a{
+            color:  rgba(0, 0, 0, 0.658);
+        }
+        img{
+            height: 50px;
+            width: 100px;
+        }
+        .container>div{
+           
+            padding-top: 20px;
+        }
+
+        .navbar-nav{
+                 display: flex;
+                 justify-content: space-around;
+                 width: 800px;
+        }
+        select{
+            border: none;
+            background-color: rgb(253, 255, 240);  
+            overflow: hidden;
+            max-width: min-content;
+        }
+        #rightblock .fa-solid{
+            margin-right: 10px;
+            color: #70a21a;
+        }
+        .mobile-controls{
+            background-color: rgb(212, 30, 30);
+            color: white;
+            height:30px;
+            border-radius: 30px;
+            width:170px;
+            margin-top: 20px;
+            text-align: center;
+        }
+        #uppernav{
+            display: flex;
+            justify-content:space-between ;
+        }
+        #leftbloc>div{
+            
+            
+        }
+        #rightblock>div{
+            justify-content:space-between ; 
+           
+            
+        }
+        #uppernav>:first-child>div{
+           
+            justify-content:space-between ;
+        }
+        #rightblock{
+            display: flex;
+            justify-content: space-around;
+            font-size: 14px;
+            ;
+            width: 60%;
+        }
+        body{
+          background-color:rgb(253, 255, 240); ;
+        
+          font-family: "Open Sans", sans-serif;
+         }
+         li{
+             list-style-type: none;
+             margin: 0;
+             padding: 0;
+             font-family: "Open Sans", sans-serif;
+             border-radius: 10px;
+             
+             
+         }
+         option{
+            background-color: rgb(253, 255, 240); 
+             border-radius: 10px;
+             font-family: "Open Sans", sans-serif; 
+             font-weight:900;
+             color:  rgba(0, 0, 0, 0.658);
+         }
+         #upperNav{
+             font-family: "Open Sans", sans-serif;
+             font-weight:900;
+         }
+         #leftblock{
+             display:flex ;
+             justify-content: space-between;
+             width: 200px;
+             
+             color: rgba(0, 0, 0, 0.658);
+        }
+        
+    </style>
+    <script src="https://kit.fontawesome.com/6ee714d796.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <nav id="uppernav">
+      <div id="rightblock"> <div><i class="fa-solid fa-location-dot"></i>Food delivary Only in Hydrabad </div> <div><i class="fa-solid fa-phone-volume "></i>9017484722</div> <div> <i class="fa-solid fa-envelope"></i>fitmeals@gmail.com</div></div>
+      <div id="leftblock">
+        <div> <i class="fa-solid fa-magnifying-glass"></i></div>
+        <div><i class="fa-regular fa-user"></i></div>
+        <div> <i class="fa-solid fa-bag-shopping"></i></div>
+        <div></div>
+    </div>
+    </nav>
+     <nav class="container">
+							
+			<div class="navbar-logo ">	<a class="logo" href="https://www.fitmeals.co.in/"><img src="//www.fitmeals.co.in/wp-content/uploads/2019/06/logo-black.png" alt="Fitmeals"></a></div>	
+								
+		    <div id="navbar" class="navbar-collapse collapse navbar-mobile" data-mobile-screen-width="1200">
+				  
+				    <ul  class="navbar-nav">
+                        <li ><a href="https://www.fitmeals.co.in/">Home</a></li>
+                      
+                      <li> <select> 
+                            <option><a>Meal Plans</a></option>
+                            <option><a href="https://www.fitmeals.co.in/services/weight-loss-meal-plan/">Weight Loss Meal Plan</a></option>
+                            <option><a href="https://www.fitmeals.co.in/services/balanced-plan/">Maintenance Meal Plan</a></option>
+                            <option><a href="https://www.fitmeals.co.in/services/athletic-plan/">Athletic Meal Plan</a></option>
+                            <option><a href="https://www.fitmeals.co.in/services/keto-meal-plan/">Keto Meal Plan</a></option>
+                            <option><a href="https://www.fitmeals.co.in/services/6-weeks-transformation-challenge/">Transformation Challenges</a></option>
+                       
+                        </select>
+                    
+                        </li>
+                        <li ><a href="https://www.fitmeals.co.in/health-coaching/">Health coaching</a></li>
+                       <li> <select > 
+                                <option><a>Products</a></option>
+                                <option><a href="https://www.fitmeals.co.in/product-category/products/healthy-cakes/">Vegan Sweets</a></option>
+                                <option><a href="https://www.fitmeals.co.in/product-category/products/low-calorie-sauces/">Low-Cal Sauces</a></option>
+                                <option><a href="https://www.fitmeals.co.in/product-category/products/nut-butters/">Nut Butters</a></option>
+                                <option><a href="https://www.fitmeals.co.in/product-category/products/fresh-bakes/">Fresh Bakes</a></option>
+                            
+                        </select></li>
+
+                        <li ><a href="https://www.fitmeals.co.in/blog/">Blog</a></li>
+                       <li> <select> 
+                            <option><a href="https://www.fitmeals.co.in/about-us/">About Us</a></option>
+                            <option><a href="https://www.fitmeals.co.in/about-us/">Our story</a></option>
+                            <option><a href="https://www.fitmeals.co.in/faq/">FAQ</a></option>
+                            <option><a href="https://www.fitmeals.co.in/testimonials/">Testimonials</a></option>
+                          
+                        </select> </li>
+                       
+                 </ul>				
+                			
+			</div>
+            <div class="mobile-controls"> <li id="mobile">Call: 9100347480</li></div>	
+			
+     </nav>
+      
+</body>
+</html>
+
+
+
+
+
