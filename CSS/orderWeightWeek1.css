@@ -1,0 +1,254 @@
+
+
+ #relatedProducts
+ {
+     text-align: center;
+     font-family: 'Fira Sans', sans-serif;
+     font-size: 120px;
+     font-weight: bold;
+     background-color: #da2424;
+ }
+#container {
+    width: 100%;
+    height: 400px;
+    background-image: url("https://www.fitmeals.co.in/wp-content/uploads/2018/02/SLIDE_02.jpg") ;
+  }
+
+  #container > h1 {
+    text-align: center;
+    padding-top: 170px;
+    color: white;
+    font-size: 48px;
+    font-family: 'Fira Sans', sans-serif;
+  }
+
+  #cart
+  {
+      box-sizing: border-box;
+      width:80% ;
+      height:600px;
+      margin: auto;
+      margin-top: 100px;
+      display: flex;
+      padding-left: 100px;
+     
+      
+  }
+  #cart > div
+  {
+    /* border:1px solid red; */
+    width:490px ;
+    height:466px ; 
+    margin-right: 25px;
+    margin-top:8px ; color:grey;
+    font-family: 'Fira Sans', sans-serif;
+    line-height: 25px;   
+  }
+
+  #cart > div:last-child
+  {
+      height:566px;
+  }
+
+  #cartImage
+  {
+      width:490px ;
+      height:466px ; 
+  }
+
+  #quantity
+  {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
+    border-radius: 24px;
+    background-clip: border-box;
+    width: 12%;
+    height: 10%;
+    padding: 0 0 0 30px;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+ 
+  }
+
+  .addToCart
+  {
+    background-color: #da2424;
+    height:40px;
+    width:135px;
+    border-radius: 20px;
+    border:0px;
+    font-size:medium;
+    font-weight: 600;
+    color:white;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  .addToCart:hover
+  {
+    background-color:#8EC038;
+  }
+    
+  #descriptionReviews
+  {
+
+      height:70px;
+      width:1000px; 
+      margin: auto;
+      margin-top: 60px;
+      text-align: center;
+      font-family: 'Fira Sans', sans-serif;
+      font-size: larger;
+      font-weight: 700;
+      color:rgb(46, 44, 44)  
+  }
+
+  #description:hover,#reviews:hover{
+        text-decoration: underline;
+        text-decoration-color: #da2424;
+        text-underline-offset:7px ;
+  }
+
+  
+
+ 
+
+  #descriptionData
+  {
+      height:420px;
+      width:80% ;
+      /* border:1px solid teal; */
+      margin: auto;
+
+  }
+
+  #descriptionData>div
+  {
+    /* box-sizing: border-box; */
+    height:170px;
+    width:90% ;
+    /* border:1px solid black ; */
+    margin-top: 20px;
+    margin: auto;
+
+  }
+
+  .note + ul {
+    margin-top: 20px;    
+  }
+  .note + ul >li
+  {
+    line-height: 40px;
+  }
+
+  #descriptionData >div:first-child
+  {
+    line-height: 25px;
+  }
+
+ #RelatedProducts
+ {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 36px;
+    text-align: center;
+    margin-top: 90px;
+ }
+
+ #sampleProduct
+ {
+     box-sizing: border-box;
+     display:flex;
+     height:580px;
+     width:85% ;
+     /* border:1px solid red ; */
+     margin:auto ;
+     padding-left: 40px;
+     font-family: 'Fira Sans', sans-serif;
+ }
+
+ #sampleProduct > div
+ {
+    height:550px;
+    width:35%;
+    /* border: 1px solid teal; */
+    margin-right:38px;
+    text-align: center;
+ }
+
+ #sampleProduct > div >img
+ {
+    width:360px;
+    height:337px;
+    border-radius: 8%;
+ }
+
+ #sampleProduct > div  >img:hover
+ {
+     width:340px ;
+     height:315px;
+     transition: all 0.3s ease;
+     margin-bottom: 22px;
+ }
+
+ 
+
+ .producttitle
+ {
+    font-size: 24px;
+    font-family: 'Fira Sans', serif;
+    font-family: var(--font-headers), serif;
+    font-weight: 700;
+    padding: 6px 0 15px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+ }
+
+ .producttitle:hover
+ {
+    color:#8EC038;
+ }
+
+ bdi {
+    unicode-bidi: isolate;
+    font-size: 24px;
+    color:red;
+   
+}
+
+.PriceSymbol
+{
+    color: #DDC76D;
+    color: var(--second);
+    font-family: 'Fira Sans', serif;
+    font-family: var(--font-headers), serif;
+   
+}
+.readmore
+{
+    color:#8EC038;
+    font-size:13px ;
+    font-weight: 700;
+}
+.readmore:hover
+{
+    color:black;
+}
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  
