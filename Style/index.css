@@ -493,3 +493,78 @@ body{
 .dropdown-content a:last-child{
     margin-bottom:20px;
 }
+
+#container1{
+  display: flex;
+  background-color: #282834;
+  height: 500px;
+  justify-content:space-around;
+  font-family: "Fira Sans",serif; 
+}
+
+#container1>div{
+  margin-top: 70px;
+  width: 200px;
+  justify-content: center; 
+}
+
+#desc{
+  color:white;
+  cursor: pointer;
+  width: 120px;
+}
+#dispicon{
+  color: #8ec038;
+  cursor: pointer;
+  font-size:12px;
+}
+#dispicon1{
+  font-size:10px;
+}
+#dispicon1:hover{
+  color: #8ec038;
+}
+
+#text{
+  color: #ffffffa6;
+  font-family: 'Open sans',sans-serif;
+  font-size:14px;
+  margin-top:30px;
+  margin-bottom: 40px;
+  text-align:left;
+}
+#imgtrio{
+  
+  width: 150px;
+  display: flex;
+  justify-content:space-around;
+}
+#imgtrio > i{
+  font-size:25px;
+  color:#8ec038;
+  
+}
+
+#footlogo{
+  width: 150px;
+  height:76px;
+}
+
+#contact{
+  color:white;
+}
+
+#log{
+  color:#8ec038;
+}
+
+#foot > h5{
+  padding-left: 50px;
+}
+
+#expl{
+  color:#8ec038;
+}
+.green{
+  color:#8ec038;
+}
