@@ -40,6 +40,9 @@ body{
     background-size: cover;
 }
 
+
+
+
 #img5{
   height:600px;
   width:400px;
@@ -124,10 +127,7 @@ body{
     width: 100%;
     padding-top:100px;
     justify-content: space-between;
-  }
-
- 
-  
+  }  
   #imgn{
     height:409px;
     width: 351px;
@@ -374,7 +374,6 @@ body{
 }
 #uppernav{
   display: flex;
-  border-top: 0.2px solid grey;
   border-bottom: 0.2px solid grey;
   justify-content:space-between;
   width: 100%;
