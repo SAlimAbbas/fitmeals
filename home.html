@@ -34,6 +34,7 @@
     }
     #third{
         height: 550px;
+       line-height: 30px;
     }
     #food-blog-container img{
         width: 370px;
@@ -208,14 +209,14 @@
         margin:auto;
         background-color: #f3f5ed;
         margin-bottom: -200px;
-        border:1px solid red;
+       
         display: flex;
         justify-content: center;
     }
     #slideshow>div{
         height:400px;
-        
-        border:1px solid red;
+        display: flex;
+      
         margin-top: 230px;
     }
    
@@ -240,22 +241,64 @@
     
 
     
-    #photos{
-        background-image: url("Images\Untitled3-modified.png");
-        height: 300px;
-        width: 500px;
+    
+    #slideshow>div>button{
+        margin-top: 200px;
+        height: 50px;
+        width: 50px;
+        border-radius: 30px;
+        border:1px solid rgba(0, 0, 0, 0.658);
     }
-        
+
+      #slideshow>div>button:hover{
+        background-color: rgba(0, 0, 0, 0.658);
+        color:#FFFFFF;
+
+    }
+    #mymarquee{
+        display: flex;
+    }
+    .photos{
+        display:none;
+        width: auto;
+
+    }
+    #firstimg{
+        display: block;
+    }
+  
     
    </style>
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&family=Sacramento&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&family=Sacramento&display=swap" rel="stylesheet">
      <script src="https://kit.fontawesome.com/6ee714d796.js" crossorigin="anonymous"></script>
-  
+<script>
+            var slideIndex = 1;
+          showSlides(slideIndex);
+         
+       // Next/previous controls
+    function plusSlides(n) {
+         showSlides(slideIndex += n);
+    }
+        function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("photos");
+       console.log(slides)
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+            slides[slideIndex-1].style.display = "block";
+        }
+          
+        
+        }
+  </script> 
+    
     </head>
  <body>
      <div>
@@ -265,10 +308,15 @@
         </div>
     
         <div id="slideshow">
-           <div></div>
-           <div id="photos"></div>
-           <div></div>
-         </div>
+           <div>
+             <button type ="button" onclick="plusSlides(-1)"  class="sbtn" ><i class="fa-solid fa-arrow-left-long"></i></button>
+             <div id="mymarquee">
+                 <div class="photos"><img src="Images\Untitled2-modified (1).png"></div>
+                 <div class="photos"  id="firstimg"><img src="Images\Untitled3-modified.png"></div>
+             </div>
+             <button type="button" onclick="plusSlides(1)" class="sbtn" > <i class="fa-solid fa-arrow-right-long"></i></button>
+           </div>
+        </div>
     
     <div id="image"><img src="https://www.fitmeals.co.in/wp-content/uploads/2019/10/testimonials-bg.png"></div> 
     <div id="join">
@@ -324,7 +372,7 @@
                  <button class="btn">Uncategorized</button>
                  <h3><b>
                      Fitmeals India Collaboration With Nestle a+ Grekyo</b></h3>
-                     <p>We’re excited to announce our collaboration with Nestle a+. Now you can get a Nestle a+ Grekyo with every breakfast meal! Wh …</p>
+                     <p>We’re excited to announce our collaboration with Nestle a+. </p>
              </div>
              <div class="lower-div">
                  <div><i class="fa-solid fa-calendar-days"></i><b>June 16, 2021</b></div>
