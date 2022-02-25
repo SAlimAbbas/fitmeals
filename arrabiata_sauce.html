@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrabiata sauce - Fitmeals</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        *{
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        .page-header{
+            background-image: url("https://www.fitmeals.co.in/wp-content/uploads/2021/06/arrabbiata-sauce-680x900-1.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+            /* background-color: var(--black); */
+            height: 400px;
+            /* margin: 0; */
+
+            text-align: center;
+            display: flex; 
+            flex-direction: column; 
+            justify-content: center;
+            padding-bottom: 0;
+            background-repeat: no-repeat; 
+            position: relative;
+            background-position: 50% 0px;
+            background-size: cover;
+             border: 0 none;   
+             opacity: 0.6;
+             filter: brightness(0.8);
+             /* filter: drop-shadow(16px 16px 20px black);       */
+            /* filter: contrast(90%) */
+            filter: grayscale(10%)
+        }
+        #container{
+            margin-right: auto;
+            margin-left: auto;
+            width: 100%;
+            padding: 150px 15px;
+            position: relative;
+            z-index: 2;           
+        }
+        h1{
+            font-size: 54px;
+            font-weight: 800;
+             color: #000;
+            font-family: 'Mukta', sans-serif;
+        }
+        #mid-container{
+            /* border: 2px solid red; */
+            display: flex;
+            /* border-radius: 25px; */
+            width: 70%;
+            margin-top: 150px;
+            margin-left: 200px;
+            margin-bottom: 120px;
+        }
+        #mid-container img{
+            height: 550px;
+        }
+        #mid-container > div:first-child{
+            margin-right: 40px;
+        }
+        #mid-container > div:nth-child(1){
+            display: flex;
+
+        }
+       
+        .quantity input{
+            border-radius: 25px;
+            border: 1px solid grey;
+            margin: 0 1.1em 0 0;
+            width: 95px;
+            height: 49px;
+            float: left;
+            position: relative;
+        }
+
+        #qty_cart{
+            display: flex;
+            margin-top: 40px;
+        }
+    
+        #qty_cart > div:last-child a{
+            text-decoration: none;
+            color: #fff;
+            font-weight: 800;
+        }
+        #qty_cart > div:first-child{
+            margin-right: 20px;
+            font-weight: bold;
+            color: rgb(63, 59, 59);
+        }
+        .prices_form{
+            margin-top: 80px;
+            margin-bottom: 60px;
+        }
+        .price{
+            font-size: 18px;
+        }
+        .rate{
+            color: #da2424;
+        }
+        h2{
+            text-align: center;
+        }
+        #description_container{
+            /* border: 2px solid red; */
+            width: 85%;
+            padding: 60px;
+            margin: auto;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            margin-bottom: 100px;
+        }
+        #description_container p, #description_container li{
+            color: #383d46;
+            font-size: 15px;
+            line-height: 1.8;
+            /* width: 70%; */
+        }
+        h4{
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+        .btnDec{
+            /* padding: 10px; */
+            margin-right: 20px;
+        }
+        #cart{
+            padding: 16px;
+            /* width: 130px; */
+            background-color: #da2424;
+            color: #fff;
+            border: 0;
+            border-radius: 30px;
+            font-weight: bold;
+            /* font-size: 17px; */
+        }
+        #cart:hover{
+            background-color: #91c23e;
+        }
+        body{
+            margin: 0;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <header class="page-header">
+        <div id="container">
+         <h1>Arrabiata Sauce</h1>
+        </div>
+    </header>
+
+    <div id="mid-container">
+        <!-- IMAGE -->
+        <div>
+            <img src="https://www.fitmeals.co.in/wp-content/uploads/2021/06/arrabbiata-sauce-680x900-1.jpg" alt="arrabiata_sauce-image">
+        </div>
+        <!-- PRICES -->
+        <div>
+            <p class="price"> <strong> Price: <span class="rate">₹220.00</span></strong></p>
+            <div class="prices_form">
+                
+                <p><strong>Quantity</strong></p>
+                <input type="radio" checked> 500 gm
+
+            <div id="qty_cart">
+
+            </div>
+            <h4 id="inner">1</h4>
+
+            </div>
+           
+            <p><strong>Categories: </strong>Low Calorie Sauces, Products</p>
+            
+
+        </div>
+    </div>
+
+    <h2>Description</h2>
+    <div id="description_container">
+        <p>Fitmeals Arrabbiata sauce is a delicious blend of spicy chillies, tomatoes and authentic Italian ingredients.</p>
+        <p>About This Product:</p>
+        <ul>
+            <li>Made with no added preservatives</li>
+            <li>The sauce is cooked slowly to give a thicker and richer texture.</li>
+            <li>Suitable for Vegan, Vegetarian</li>
+            <li>No added preservatives</li>
+            <li>Gluten free</li>
+            <li>Crafted using the highest quality ingredients</li>
+        </ul>
+    </div>
+</body>
+</html>
+
+<script>
+    var data = [{image_url: "https://www.fitmeals.co.in/wp-content/uploads/2021/06/arrabbiata-sauce-680x900-1.jpg", name: "Arrabiata Sauce", price: 220, quant: 1}];
+
+    localStorage.setItem("arrabiata_data", JSON.stringify(data));
+
+    var cartArr = JSON.parse(localStorage.getItem("CartItems")) || [];
+
+    displayData(data);
+
+// ************************************************************
+    // var almonds = JSON.parse(localStorage.getItem("almonds_data"));
+function displayData(data)
+{
+    document.querySelector("#qty_cart").innerHTML = "";
+    
+    data.map(function(elem,index)
+    {
+        var mainDiv = document.createElement("div");
+
+        // var inputTag = document.createElement("input");
+        // inputTag.setAttribute("type",number);
+        var btnUp = document.createElement("button");
+        btnUp.innerText = "+";
+        btnUp.addEventListener("click",function()
+        {
+            increaseQuant(elem,index);
+        })
+
+        var btnDown = document.createElement("button");
+        btnDown.setAttribute("class","btnDec");
+        btnDown.innerText = "-";
+
+        btnDown.addEventListener("click",function()
+        {
+            decreaseQuant(elem,index);
+        })
+
+        var btn = document.createElement("button");
+        btn.innerText = "Add To Cart";
+        btn.setAttribute("id","cart");
+
+        btn.addEventListener("click",function()
+        {
+            addToCart(elem);
+        });
+
+        mainDiv.append(btnUp,btnDown,btn);
+
+        document.querySelector("#qty_cart").append(mainDiv);
+
+            
+    });
+
+    function addToCart(elem)
+    {
+            //   console.log(elem);
+            cartArr.push(elem);
+            localStorage.setItem("CartItems",JSON.stringify(cartArr));
+            // displayData(data)
+
+    }
+
+    function increaseQuant(elem,index)
+    {
+        console.log(index);
+        var array = cartArr[index].quant++;
+        document.querySelector("#inner").innerText = array;
+        localStorage.setItem("CartItems", JSON.stringify(cartArr));
+        displayData(data);
+
+    }
+
+    function decreaseQuant(elem,index)
+    {
+        console.log(index);
+        var array = cartArr[index].quant--;
+        document.querySelector("#inner").innerText = array;
+        localStorage.setItem("CartItems", JSON.stringify(cartArr));
+        displayData(data);
+    }
+
+}
+
+</script>
+

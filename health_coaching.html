@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health coaching</title>
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+
+<!-- FONT AWESOME  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link rel="stylesheet" href="health_coaching-2.css">
+
+    
+    <style>
+        body{
+            margin: 0%;
+            padding: 0%;
+        }
+       
+        .nav{
+            display: flex;
+            /* grid-template-columns: repeat(2,1fr); */
+            width: 100%;
+            height: 90px;
+            /* top: 20px; */
+            /* background-color: rgb(2, 8, 8); */
+            position: fixed;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+        .logo{
+            padding-left: 25px;
+        }
+        .others{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            width: 20%;
+            /* background-color: #7e38c0; */
+            margin-top: 25px;
+            
+
+        }
+        .image{
+            width: 100%;
+            height: 680px;
+            /* background-color: rgb(95, 61, 20); */
+            background-image: url("https://www.fitmeals.co.in//wp-content//uploads//2021//09//man-2264825_1920.jpg");
+            background-size: 100% 100%;
+            animation: slider 10s infinite linear;
+        }
+        @keyframes slider{
+            0%{
+                background-image: url("https://www.fitmeals.co.in/wp-content/uploads/2021/09/Creative-1-1920x1280px.jpg");
+                background-size: 100% 100%;
+            }
+            35%{
+                background-image: url("https://www.fitmeals.co.in/wp-content/uploads/2021/09/businesswoman-2817567_1920.jpg");
+                background-size: 100% 100%;
+            }
+            75%{
+                background-image: url("https://www.fitmeals.co.in//wp-content//uploads//2021//09//man-2264825_1920.jpg");
+            }
+
+        }
+        .features{
+           
+            width: 100%;
+            height:200px;
+            display: grid;
+            background-color: #8ec038;
+            grid-template-columns: repeat(6,1fr);
+           
+            border-color: aliceblue;
+            /* align-items: center; */
+            /* //align-self: center; */
+        }
+      .features>div{
+        margin-top: 30px;
+          margin: auto;
+      }
+      .features>div>p{
+          font-family:sans-serif;
+          font-weight: bold;
+      }
+      div>i~p{
+          font-family: sans-serif;
+          font-size: 20px;
+      }
+
+      .main{
+        background-color: #eeeeee;
+        width: 100%;
+          height: 400px;
+
+      }
+      .appointment{
+          width: 100%;
+          height: 400px;
+          border-color: aqua;
+           background-color: #eeeeee;
+          display: grid;
+          grid-template-columns: repeat(2,1fr);
+      }
+    .appointment>div{
+        margin-top: 30px;
+    }
+    .contentimg>img{
+        border-radius: 20px;
+    }
+      .content>p:nth-child(1){
+          font-size: 30px;
+          font-weight: bold;
+      }
+      .content>p{
+          font-size: 20px;
+          font-family: sans-serif;
+          /* padding: 10px; */
+          margin-left: 30px;
+          
+      }
+      .time{
+          display: flex;
+       
+      }
+      .call{
+          font-size: 20px;
+        margin-left: 25px;
+        font-weight: bold;
+        font-family: sans-serif;
+
+      }
+
+      /* .contentimg{
+          margin-bottom: 100px;
+      } */
+    
+    </style>
+
+
+
+</head>
+<body>
+
+    <div class="prathmeshcontainer">
+        <div class="nav">
+            <div class="logo">
+                <img src="https://www.fitmeals.co.in/wp-content/uploads/2019/06/logo-white.png" alt="" style="height: 50px;">
+            
+              
+            </div>
+            <div class="others">
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass fa-2x" style="color: rgb(238, 239, 240);"></i>
+                    <!-- <i class="fa-solid fa-hand-holding-medical fa-5x"></i> -->
+                </div>
+                <div class="sign">
+                        <i class="fa-solid fa-circle-user fa-2x" style="color: rgb(238, 239, 240)"></i>
+
+                </div>
+                <div class="cart">
+                    <!-- <i class="fa-solid fa-cart-arrow-down fa-5x"></i> -->
+                    <i class="fa-solid fa-cart-arrow-down fa-2x" style="color: rgb(238, 239, 240)"></i>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="image">
+
+        </div>
+    </div>
+    <div class="features">
+        <div class="health">
+           
+            <center> <i class="fa-solid fa-hand-holding-medical fa-4x" style="color:aliceblue;"></i></center>
+            <!-- <h2>Overall Health Focus</h2> -->
+            <p>Overall Health Focus</p>
+        </div>
+
+      
+        <div class="clipboard">
+            <center> <i class="fa-solid fa-clipboard fa-4x" style="color: aliceblue;"></i></center>
+           
+            <p>Customized Diet Plan</p>
+        </div>
+        <div class="apple">
+            <center><i class="fa-solid fa-apple-whole fa-4x" style="color: aliceblue;"></i></center>
+            
+            <p>Easy Healthy Recipies</p>
+        </div>
+        <div class="workout">
+            <center><i class="fa-solid fa-dumbbell fa-4x" style="color: aliceblue;"></i></center>
+            
+            <p>Workout Plans</p>
+        </div>
+        <div>
+            <center> <i class="fa-solid fa-child fa-4x" style="color: aliceblue;"></i></center>
+           
+            <p>Body Transformation</p>
+        </div>
+        <div class="cont">
+            <center>  <i class="fa-solid fa-phone-volume fa-4x" style="color: aliceblue;"></i></center>
+          
+            <p>Weekly Consultation</p>
+        </div>
+
+    </div>
+   
+        <div class="appointment">
+            <div class="content">
+                <p>Book an appointment with <br>
+                your <span style="font-size:40px;color: #8ec038; font-family: sans-serif; font-weight: bold;"> personal nutritionist</span></p>
+            <p> <Book style="color:#292d35; font-family:Open Sans, sans-serif; font-size: 15px;">Book a consultation session on the app with one  of our nutritionists to discuss your health <br>concerns and goals.</span></p>
+                   
+
+                <div class="time">
+                    <div class="clock">
+                        <i class="fa-regular fa-clock fa-2x" style="color: #8ec038;margin-left: 30px;"></i>
+                    </div>
+
+                    <div class="call">
+                      <p> Every day from 12:00 PM to 10:00 PM </p>
+                    </div>
+                </div>
+
+                
+                <div class="time">
+                    <div class="clock">
+                        <i class="fa-regular fa-clock fa-2x" style="color: #8ec038;margin-left: 30px;"></i>
+
+                   
+                    </div>
+
+                    <div class="call">
+                      <p > +91 9100347489</p>
+                    </div>
+                </div>
+             
+               
+                
+    
+            </div>
+            <div class="contentimg">
+                <img src="	https://www.fitmeals.co.in/wp-content/uploads/2021/09/businesswoman-2817567_640.jpg" alt="">
+            </div>
+    
+        </div>
+
+       <!--*****************************************************************************************************  -->
+
+
+
+
+
+    <!-- SERVICES CONTAINER -->
+    <div id="container">
+        <h6>Our services</h6>
+        <h2>Let's change your life</h2>
+        <div id="list_of_times">
+
+            <!-- box-1 -->
+
+            <div>
+               
+                <img class="food_image" src="https://www.fitmeals.co.in/wp-content/uploads/2019/10/food-2569257_640-275x275.jpg" alt="">
+         	
+                <div class="description">
+                   <h2 class="header">Nutrition Programs</h2> 
+                    <p>Diet charts designed to help you reach your goals in a sustainable manner without using any crash diet approach.</p>
+                    <!-- <button>Read More</button> -->
+                    <a href="nutrition.html" target="_blank">Read More</a>
+                </div>
+ 
+            </div>
+
+            <!-- box-2 -->
+            <div>
+                <img class="food_image" src="https://www.fitmeals.co.in/wp-content/uploads/2019/10/adult-1850925_640-1-275x275.jpg" alt="">
+                <div class="description">
+                    <h2 class="header">Workout Programs</h2>
+                    <p>Easy workout routines designed according to your fitness levels with constant motivation to push yourself.</p>
+                    <a href="workout.html" target="_blank" >Read More</a>
+                </div>
+            </div>
+           
+            <!-- box-3 -->
+            <div>
+                <img class="food_image" src="https://www.fitmeals.co.in/wp-content/uploads/2019/10/doctor-5710152_640-275x275.jpg" alt="">
+                <div class="description">
+                    <h2 class="header">Health Councelling</h2>
+                    <p>30 minute consultations with any of our nutritionists every week to discuss your progress and problems.</p>
+                    <a href="health.html" target="_blank">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- ****************************************************************** -->
+<!-- WORKING CONTAINER -->
+
+<div id="container2">
+    <h6>How It Works</h6>
+
+    <div id="container2_parent">
+        <div>
+            <i class="fa-solid fa-mobile-screen-button icon"></i>
+            <h3>Download the app</h3>
+            <p>Click on the link and get on board our Fitmeals app</p>
+        </div>
+        <hr noshade>
+        <div>
+            <i class="fa-solid fa-user-check icon icon2"></i>
+            <h3>Book an appointment</h3>
+            <p>Our nutritionists will help find the right plan for you</p>
+        </div>
+        <hr noshade="">
+        <div>
+            <i class="fa-solid fa-calculator icon"></i>
+            <h3>Place an order</h3>
+            <p>Choose the plan the fits you well and place an order</p>
+        </div>
+        <hr noshade>
+        <div>
+            <i class="fa-solid fa-check icon"></i>
+            <h3>Get started</h3>
+            <p>Follow the diet and workout plans sent to you and begin your journey.</p>
+        </div>
+    </div>    
+</div>
+
+<!-- ********************************************************************** -->
+<!-- CUSTOMER REVIEWS -->
+<div id="container3">
+    <div>
+        <p>127</p>
+        <p>Happy Customers</p>
+    </div>
+    <hr noshade>
+
+    <div>
+        <p>24</p>
+        <p>Nutrition Programs</p>
+    </div>
+    <hr noshade>
+
+    <div>
+        <p>15</p>
+        <p>Coaching Certificates</p>
+    </div>
+    <hr noshade>
+
+    <div>
+        <p>520+</p>
+        <p>Workout Session</p>
+    </div>
+</div>
+<!-- ************************************************************ -->
+<!-- CONTAINER4 -- MOBILE-IMAGE -->
+<div id="container4">
+    <div>
+        <img src="https://www.fitmeals.co.in/wp-content/uploads/2021/09/PHOTO-2021-07-13-17-18-45.jpg" alt="">
+    </div>
+    <div>
+        <img src="https://www.fitmeals.co.in/wp-content/uploads/2021/09/appstore-asset-3.jpg" alt="">
+    </div>
+</div>
+
+<!-- ************************************************************ -->
+<div class="app">
+    <a href="https://play.google.com/store/apps/details?id=com.zoconut.fitmeals" target="_blank"><img src="https://www.fitmeals.co.in/wp-content/uploads/2021/09/ICON-3-360x74.png" alt=""></a>
+</div>
+
+<div class="app">
+     <img src="https://www.fitmeals.co.in/wp-content/uploads/2021/09/ICON-7-1024x184.png" alt="">
+</div>
+</body>
+</html>

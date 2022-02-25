@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - fitmeals</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .page-header{
+            background-image: url("https://www.fitmeals.co.in/wp-content/uploads/2018/02/inner-page.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+            /* background-color: var(--black); */
+            height: 400px;
+            /* margin: 0; */
+
+            text-align: center;
+            display: flex; 
+            flex-direction: column; 
+            justify-content: center;
+            padding-bottom: 0;
+            background-repeat: no-repeat; 
+            position: relative;
+            background-position: 50% 0px;
+            background-size: cover;
+             border: 0 none;   
+             opacity: 0.6;
+             filter: brightness(0.8);
+             /* filter: drop-shadow(16px 16px 20px black);       */
+            /* filter: contrast(90%) */
+            filter: grayscale(10%)
+        }
+         #container{
+            margin-right: auto;
+            margin-left: auto;
+            width: 100%;
+            padding: 150px 15px;
+            position: relative;
+            z-index: 2;          
+        }
+        h1{
+            font-size: 54px;
+            font-weight: 800;
+             color: #fff;
+            font-family: 'Mukta', sans-serif;
+        }
+        
+        body{
+            margin: 0;
+        }
+        #inner-container{
+            /* border: 2px solid red; */
+            width: 70%;
+            margin: auto;
+            margin-top: 120px;
+        }
+        #inner-container > div{
+            /* border: 2px solid blue; */
+            margin-bottom: 40px;
+        }
+        .box{
+            background-color: #f7f6f7;
+            padding: 20px;
+            font-size: 17px;
+            color: #383d46;
+            border-radius: 30px;
+        }
+        a{
+            text-decoration: none;
+            color: #383d46;
+        }
+        a:hover{
+            color: #91c23e;
+        }
+        p{
+            font-size: 40px;
+            font-weight: 900;
+        }
+        input{
+            border-radius: 30px;
+            padding: 18px;
+            border: 1px solid grey;
+        }
+        sup{
+            color: red;
+        }
+        #name{
+            display: flex;
+            
+        }
+        .inner{
+            margin-right: 15px;
+        }
+        select{
+            padding: 18px;
+            border-radius: 30px;
+            color: #383d46;
+            width: 15%;
+            /* text-align: center; */
+            font-size: 17px;
+
+        }
+        option{
+            font-weight: 200;
+            text-align: left;
+        }
+        label{
+            font-size: 18px;
+            font-weight: bold;
+            color: grey;
+            /* margin-bottom: 30px; */
+        }
+        #myForm > div{
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header class="page-header">
+        <div id="container">
+         <h1>Checkout</h1>
+        </div>
+    </header>
+
+    <div id="inner-container">
+        <div class="box">Returning customer?<a href="">Click here to login</a></div>
+        <div class="box">Have a coupon?<a href="">Click here to enter your code</a></div>
+        <div>
+
+            <p>Billing Details</p>
+            <form action="" id="myForm">
+
+             <div id="name">
+                <div>
+                    <label for="">First name <sup>*</sup></label>
+                    <div class="inner">
+                    <input type="text">
+                    </div>
+                </div>
+                
+                <div>
+                    <label for="">Last name <sup>*</sup></label>
+                    <div class="inner">
+                        <input type="text">
+                    </div>
+                </div>
+             </div>
+                
+
+                <div>
+                    <label for="">Country / Region <sup>*</sup></label>
+                    <select name="" id="">
+                        <option value="India">India</option>
+                    </select>
+                </div>
+
+                <div>
+                <label for="">Town / City <sup>*</sup></label>
+                <input type="text">
+                </div>
+
+                <div>
+                <label for="">State <sup>*</sup></label>
+                <select name="" id="selectOption">
+                    <option value="Telangana">Telangana</option>
+                    <option value="Tripura">Tripura</option>
+                    <option value="Uttarakhand">Uttarakhand</option>
+                    <option value="Odisha">Odisha</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                    <option value="Nagaland">Nagaland</option>
+                    <option value="Punjab">Punjab</option>
+                    <option value="Manipur">Manipur</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Meghalaya">Meghalaya</option>
+                </select>
+                </div>
+                <div>
+                    <label for="">PIN <sup>*</sup></label>
+                    <input type="number">
+                </div>
+                <div>
+                    <label for="">Phone <sup>*</sup></label>
+                    <input type="number">
+                </div>
+                <div>
+                    <label for="">Email address <sup>*</sup></label>
+                    <input type="email">
+                </div>
+
+                <a href="">Create an account?</a> 
+
+            </form>
+        </div>
+    </div>
+</body>
+</html>
