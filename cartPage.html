@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" >
+    <link rel="stylesheet" href="./CSS/cartPage.css" />
+    <title>Document</title>
+</head>
+<body>
+    <h1>CART</h1>
+    <div id="container">
+        <h1 style="color:white;">CART</h1>
+      </div>
+      <div id="cart">
+        <div>
+          <img
+            id="cartImage"
+          />
+        </div>
+        <main>
+          <table>
+            <thead>
+              <tr>
+                <th class="product-remove">Clear</th>
+                <th class="product-thumbnail">S.No</th>
+                <th class="product-name">Product</th>
+                <th class="product-price">Price</th>
+                <th class="product-quantity">Quantity</th>
+                <th class="product-subtotal">Subtotal</th>
+              </tr>
+            </thead>
+            <tbody id="body">
+
+            </tbody>
+          </table>
+        </main>
+        <h6></h6>
+        <div id="promoUpdate">
+        <input type="text" id="promo" placeholder="Coupon Code" />
+        
+        <button onclick="promo()" class="promobtn" >Apply coupon</button>
+          
+        <a href="cartPage.html" id="UpdateCart">UPDATE CART</a>
+        </div>
+        <h1 id="showdiscount" style="margin-left:280px;"></h1>
+        <div id="totalorshipping">
+          <table id="cartTotalTable">
+            <tr>
+              <th class="shippingtable">subtotal</th>
+              <td id="tdata"><b>₹</b><strong>₹0</strong></td>
+            </tr>
+            <tr>
+              <th class="shippingtable">Shipping</th>
+              <td id="tdata2"><label for="shipping_method_0_flat_rate1">Flat rate: <span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">₹</span>50.00</bdi></span></label><p class="woocommerce-shipping-destination">
+              Shipping to <strong>Telangana</strong>.</p>
+              <a href="" style="color:black;text-decoration-color: lightgray;">CHANGE ADDRESS <i class="fa fa-shopping-cart"></i></a>
+              </a>
+              </td>
+            </tr>
+            <tr>
+              <th class="shippingtable">Total</th>
+              <td id="tdata3"><span>₹</span><Strong>₹0</Strong></td>
+            </tr>
+          </table>
+          ​<button onclick="toCheckOut()" class="Chkbtn">Proceed to checkout</button>
+        </div>
+        
+</body>
+</html>
+<script src="./script/cartPage.js"></script>
