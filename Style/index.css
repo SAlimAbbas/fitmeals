@@ -364,6 +364,7 @@ body{
   display: flex;
   justify-content:center;
   position: relative;
+
   height:400px;
   width: 100%;
   /* padding-top:60px; */
@@ -434,12 +435,25 @@ body{
   font-weight:bold;
   font-family: 'Fira Sans'serif;
 }
-
+/* link > h3{
+  color:black;
+} */
 #link > h3:hover{
   color:#8ec038;
   cursor: pointer;
   text-decoration: underline;
   text-decoration-thickness: 15%;
+}
+#healthcoching:hover
+{
+  color:#8ec038;
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-thickness: 15%;
+}
+#healthcoching{
+  color:black;
+  text-decoration: none;
 }
 
 .droph3 {

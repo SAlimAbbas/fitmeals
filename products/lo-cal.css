@@ -1,0 +1,141 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    width: 100%;
+    height: 300px;
+    background-color: #292d35;
+}
+.container> p{
+    font-size: 50px;
+    color:#ffffff;
+    font-family: "Open Sans, sans-serif";
+    text-align: center;
+    padding: 130px 0;
+   /* line-height: 28px; */
+    /* font-family: sans-serif; */
+    font-weight: bold;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.categories{
+    width: 28%;
+    height:600px;
+    /* background-color: aqua; */
+    
+}
+.products{
+    width: 70%;
+    /* height: 600px; */
+    height:auto;
+   
+    /* background-color: black; */
+    /* margin: auto; */
+    
+}
+.prodcont{
+    margin-top: 20px;
+}
+.cat{
+    margin-top: 50px;
+    margin-left: 20px;
+}
+hr{
+    height: 5px;
+    background-color:#8ec038; ;
+}
+.cat>p{
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    line-height: 5px;
+    
+}
+.smallline{
+    height: 2px;
+    background-color: aliceblue;
+    
+}
+li{
+    font-family: "sans-serif";
+    font-weight: bold;
+    font-size: 20px;
+}
+.prodcont{
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(3,1fr);
+  
+     row-gap: 15px; 
+    column-gap: 15px; 
+    text-align: center;
+ 
+}
+.almond{
+    text-align: center;
+    transition: 1s;
+}
+
+.foodimg{
+    display: block;
+
+
+}
+.foodimg:hover{
+    transform: scale(0.9);
+    z-index: 2;
+}
+/* p{
+    padding: 0;
+    margin: 0;
+} */
+
+.buttonselect{
+    width: 60%;
+     background-color: red; 
+     color: aliceblue;
+      height: 50px;
+       border-radius: 20px;
+       font-family: sans-serif;
+       font-weight: bold;
+       font-size: 18px;
+
+}
+.buttonselect:hover{
+    background-color: #8ec038;
+}
+.readmore{
+    color: #8ec038;
+}
+.readmore:hover{
+    color: black;
+}
+.prodname{
+    color:#292d35; 
+    font-family:sans-serif;
+}
+.prodname:hover{
+    color: #8ec038;
+}
+.desc{
+    color: #292d35;
+}
+.price{
+    text-align: center; color: red; font-size: 30px;
+}
+li:hover{
+    color: #8ec038;
+}
+
+.end1{
+    width: 100px;
+    height: 100px;
+    background-color: #8ec038;
+    border-radius: 50%;
+    /* justify-content: center; */
+}
