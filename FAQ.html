@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+         #bgimg{
+
+    background-image: url("https://www.fitmeals.co.in/wp-content/uploads/2018/02/inner-page.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    /* background-color: var(--black); */
+    height: 400px;
+    /* margin: 0; */
+    font-size :30px; 
+    color: aliceblue                                                                                                        ;
+    text-align: center;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    padding-bottom: 0;
+    background-repeat: no-repeat; 
+    position: relative;
+    background-position: 50% 0px;
+    background-size: cover;
+     border: 0 none;   
+     opacity: 0.9;
+     filter: brightness(0.8);
+     /* filter: drop-shadow(16px 16px 20px black);       */
+    /* filter: contrast(90%) */
+    filter: grayscale(10%);
+
+}
+#helpDetails{
+  width: 400px;
+  font-family: "Open Sans", sans-serif; 
+  
+  margin-top: 200px;
+  line-height: 30px;
+}
+#helpDetails>h1{
+    font-weight: bolder;
+}
+#helpDetails i{
+   color: #8ec038; 
+   margin-right: 20px;
+}
+#questions{
+    width: 700px;
+    margin-top: 130px;
+    
+    
+}
+#questions>select{
+    width: 700px;
+    background-color:  #F4F2E9;
+    height: 70px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    border: none;
+    padding: 10px 20px 10px 20px;
+    font-family: 'Fira Sans Condensed', sans-serif; 
+    font-size: 18px;
+    font-weight: bolder;
+}
+#faqcontent{
+    
+    width: 100%;
+    display:flex ;
+    justify-content: space-around;
+}
+.droph3 {
+    border: none;
+    cursor: pointer;
+  }
+  .droph3:hover {
+    border: none;
+    cursor: pointer;
+    color: #8ec038;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:   #F4F2E9;
+    min-width: 240px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-align: left;
+    border-radius:20px;
+    margin-left: -65px;
+    margin-top: 20px;
+  }
+  
+  .dropdown-content a {
+    display: block;
+    color: black;
+    padding: 12px;
+    text-decoration: none;
+    margin-left: 15px;
+  }
+  
+  .dropdown  h3:hover .dropdown-content {
+    display: block;
+  }
+  i:hover{
+      color:#8ec038;
+  }
+  .dropdown-content a:hover{
+    margin: auto;
+    color: white;
+    background-color:#8ec038;
+    border-radius:20px;
+    width:190px;
+  }
+  
+  .dropdown-content a:last-child{
+      margin-bottom:20px;
+  }
+   h3:hover{
+    color:#8ec038;
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-thickness: 15%;
+  }
+  .dropdown h3{
+    width: 700px;
+    background-color:  #F4F2E9;
+    height: 50px;
+    border-radius: 20px;
+    border: none;
+    padding: 10px 20px 10px 20px;
+    padding-top: 20px;
+    font-family: 'Fira Sans Condensed', sans-serif; 
+    font-size: 18px;
+    font-weight: bolder;
+  }
+
+    </style>
+     <script src="https://kit.fontawesome.com/6ee714d796.js" crossorigin="anonymous"></script>
+  </head>
+ <body>
+ <div id="bgimg"><h1>Frequently Asked Questions</h1></div>
+ <div id="faqcontent">
+        <div id="helpDetails">
+            <h1>If you need more help</h1>
+            <p>Have more queries regarding the plans or need a customised plan? No problem! Give us a call or send us an email and we will get back to you as soon as possible</p>
+            <div><b><i class="fa-solid fa-phone-volume "></i> +91 9963697412 </b></div>
+            <div><b><i class="fa-solid fa-envelope"></i>fitmealsindia@gmail.com </b></div>
+            <div><b> <i class="fa-solid fa-location-dot"></i>Banjara Hills, road no.5 </b></div>  
+        </div>
+       <div id="questions"  class="dropdown">
+        <div >
+            <h3> Why should I choose Fitmeals? <i id="dispicon1" class="fa-solid fa-angle-right"></i></h3>
+            <div class="dropdown-content"><p>We take pride in procuring the best quality of ingredients and preparing delicious yet highly nutritious meals. Our food is not only freshly prepared but is also hygiene approved.</p></div>
+        </div>
+        <div>
+            <h3 class="drop3">I'm a vegetarian on some days and eat non-veg on other days, can I change my meals based on that? <i id="dispicon1" class="fa-solid fa-angle-right"></i></h3>
+           <div class="dropdown-content"><p> are very flexible in the service we provide, you can just let us know about your food preferences and we will send meals with respect to that.</p></div>
+        </div> 
+        <div>
+           <h3 class="drop3">What payment methods exist in your company? <i id="dispicon1" class="fa-solid fa-angle-right"></i></h3>
+            <div class="dropdown-content"><p>You can pay by cash, card, Gpay, Paytm, PhonePay.</p></div>
+        </div>
+        <div>
+           <h3 class="drop3">Can I get a refund if I don't want to continue the service? <i id="dispicon1" class="fa-solid fa-angle-right"></i></h3> 
+            <div class="dropdown-content"><p>At Fitmeals, we have a STRICT no refund policy. We’d suggest you to go for the trial plans first.</p></div>
+        </div>  
+        <div>
+            <h3 class="drop3">Is your meat halal? <i id="dispicon1" class="fa-solid fa-angle-right"></i></h3>
+            <div class="dropdown-content"><p>Yes absolutely, our meals are 100% halal</div>
+        </div>
+        <div>
+            <h3 class="drop3">What if I'm travelling or don't want meals on a particular day? <i id="dispicon1" class="fa-solid fa-angle-right"></i></h3>
+            <div class="dropdown-content"><p>If you wish to pause or cancel your meals, you just have to inform us one day prior and we’ll stop your services immediately.</p></div>
+        </div>
+        <div>
+            <h3 class="drop3">Do you guarantee weight loss? <i id="dispicon1" class="fa-solid fa-angle-right"></i></h3>
+            <div class="dropdown-content"><p>>We do not guarantee weight loss since every body type is different; our diet plans may work for some while others won’t see a difference. However, we will try our best and alter the diet accordingly to help your reach your goals.</p></div>
+        </div>
+        <div>
+            <h3 class="drop3">How do I know which plan to choose? <i id="dispicon1" class="fa-solid fa-angle-right"></i></h3>
+            <div class="dropdown-content"><p>If you can’t understand which plan would work the best for you, you can contact our nutritionists directly at 9100347480 for a consultation session.</p></div>
+        </div>
+        </div>
+</div>
+  </body>
+</html>
