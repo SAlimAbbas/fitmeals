@@ -1,0 +1,459 @@
+
+
+#food-blog-container{
+    display: flex;
+    margin: auto;
+    width: 90%;
+    height: 800px;
+    justify-content: space-around;
+   
+  }
+  #food-blog-container>div{
+      width: 370px;
+      background-color:#fff;
+      border-radius: 30px;
+      overflow: hidden;
+      background-color: #f3f5ed;
+      
+     
+  }
+  #first{
+     height: 740px;
+  }
+  #second{
+     height:650px;
+  }
+  #third{
+     height: 550px;
+    line-height: 30px;
+  }
+  #food-blog-container img{
+     width: 370px;
+     height: 300px;
+    transition: 0.7s;
+     
+  }
+  #second:last-child{
+   height: 500px;
+  }
+  #second img{
+     height: 200px;
+  }
+  #third img{
+     height: 200px;
+  }
+  #food-blog-container>div>div{
+    
+     text-align: center;
+     overflow: hidden;
+     
+  }
+  
+  p{
+     font-family: "Open Sans", sans-serif;
+     color:rgba(0, 0, 0, 0.658);
+  }
+  .text{
+     background-color:#f3f5ed;
+     padding: 30px;
+  }
+  .lower-div{
+     display: flex;
+     justify-content:center;
+     color:rgba(41,45,53,.7);
+     font-family: "Open Sans", sans-serif;
+     background-color: #f3f5ed;  
+     border-top: 2px solid white;
+     padding-top: 30px;
+  }
+  .lower-div>div{
+     margin-right: 20px;
+     font-family: "Open Sans", sans-serif;
+     font-size: 12px;
+  }
+  .lower-div>div>i{
+     color: #70a21a;
+     width: 28px;
+     height: 16px;
+  }
+  
+  .btn{
+     width: 170px;
+     height: 40px; 
+     color: #FFFFFF;
+     background-color: #70a21a; 
+     border-radius: 30px; 
+     border:none ;
+     font-size:16px;
+     font-weight:bold;
+     border-color: #70a21a;
+  }
+  .btn:hover{
+     background-color: #f3f5ed;
+     color: #70a21a;
+     border:1px solid #70a21a;
+  }
+  #food-blog-container img:hover{
+     transform: rotate(4deg) scale(1.25);
+  }
+  #sacremento{
+       font-family: "Sacramento", serif ;
+     color: #70a21a;
+     font-size: 40px;
+     font-weight: lighter;
+  }
+  #fira{
+     margin-top: -10px;
+     font-size: 40px;
+     font-weight: bolder;
+     font-family: 'Fira Sans Condensed', sans-serif;
+  }
+  #heads{
+     font-size: 40px;
+     text-align: center;
+  }
+  #lowerbtn{
+     height: 55px;
+     width: 190px;
+     font-family: 'Fira Sans Condensed', sans-serif; 
+     background-color: #da2424;
+     color: #FFFFFF;
+     font-weight:bold;
+     font-size:16px;
+     margin: 30px 0px 30px 0px;
+     border-radius: 30px;
+     border: none;
+  }
+  #btnDiv{
+      display: flex;
+     justify-content: center;
+     width: 100%;
+  }
+  #join{
+     background-color: #70a21a;
+     height: 430px;
+     text-align: center;
+     justify-content: center;
+  }
+  #diff-text{
+     font-family: 'Fira Sans Condensed', sans-serif; 
+    font-size: 40px;
+  
+  
+  }
+  #join>p{
+     font-family: "Open Sans", sans-serif;
+     padding-top: -10px;
+  }
+  #email{
+     font-family: 'Fira Sans Condensed', sans-serif;
+    height: 66px;
+     width: 361px;
+     border-radius: 30px;
+     border: none;
+     padding: 22px 30px;
+     box-sizing: border-box;
+     font-size: 18px;
+     margin-top: 30px;
+  }
+  #subscribe{
+     width: 200px;
+     height: 66px;
+     background-color: #da2424;
+     color: #FFFFFF;
+     border: none;
+     border-radius: 50px;
+     margin-left: -60px;
+     font-family: 'Fira Sans Condensed', sans-serif;
+     font-weight: bolder;
+     font-size: 18px;
+     margin-top: 30px;
+  }
+  #diff-text{
+     display:flex;
+     justify-content: center;
+  }
+  #white{
+     color: #FFFFFF;
+     margin-left: 8px;
+  }
+  #image{
+     margin-bottom: -10px;
+  }
+  #image>img{
+     width: 100%;
+     padding-bottom: -10px;
+  }
+  #slideshow{
+     height: 850px;
+     width:100% ;
+     margin:auto;
+     background-color: #f3f5ed;
+     margin-bottom: -200px;
+    
+     display: flex;
+     justify-content: center;
+  }
+  #slideshow>div{
+     height:400px;
+     display: flex;
+   
+     margin-top: 230px;
+  }
+  
+  #testimonialsheads{
+     margin-bottom: -200px;
+     text-align: center;
+     line-height: 10px;
+  }
+  #testimonialsheads>h6{
+     font-family: "Sacramento", serif ;
+     color: #8ec038;
+     font-size: 40px;
+     margin-bottom: -1px;
+     font-weight: lighter;
+  }
+  #testimonialsheads>h2{
+     font-family: 'Fira Sans Condensed', sans-serif;
+     font-size: 40px;
+     font-weight: bolder;
+  
+  }
+  
+  
+  
+  
+  #slideshow>div>button{
+     margin-top: 200px;
+     height: 50px;
+     width: 50px;
+     border-radius: 30px;
+     border:1px solid rgba(0, 0, 0, 0.658);
+  }
+  
+   #slideshow>div>button:hover{
+     background-color: rgba(0, 0, 0, 0.658);
+     color:#FFFFFF;
+  
+  }
+  #mymarquee{
+     display: flex;
+  }
+  .photos{
+     display:none;
+     width: auto;
+  
+  }
+  #firstimg{
+     display: block;
+  }
+
+  #uppernav{
+    display: flex;
+    border-bottom: 0.2px solid grey;
+    justify-content:space-between;
+    width: 100%;
+    height: 40px;
+    margin-top:-5px;
+    font-size:14.5px;
+    font-weight:400;
+    font-family: 'Fira Sans',serif;
+  }
+  #leftnav{
+    display: flex;
+    width:600px;
+    padding-top:9px;
+    padding-left: 45px;
+    justify-content:space-between;
+    
+  }
+  #rightnav{
+    display: flex;
+    width:150px;
+    padding-top:9px;
+    padding-right: 30px;
+    justify-content:space-between;
+    
+  }
+  #icon{
+    font-size:18px;
+    color:#8ec038;
+  }
+  
+  #container{
+    display: flex;
+    justify-content: space-around;
+    height:100px;
+  }
+  #link{
+    display: flex;
+    width:550px;
+    justify-content:space-around;
+    padding-top:25px;
+    font-size:13px;
+  }
+  
+  #imglogo{
+    width:80px;
+    height:41px;
+    margin-top:25px;
+  }
+  #callbtn{
+    height:48px;
+    width:189px;
+    border-radius:25px;
+    background-color:#da2424;
+    border: #da2424;
+    font-size: 16px;
+    margin-top:25px;
+    color:white;
+    font-weight:bold;
+    font-family: 'Fira Sans'serif;
+  }
+  /* link > h3{
+    color:black;
+  } */
+  #link > h3:hover{
+    color:#8ec038;
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-thickness: 15%;
+  }
+  #healthcoching:hover
+  {
+    color:#8ec038;
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-thickness: 15%;
+  }
+  #healthcoching{
+    color:black;
+    text-decoration: none;
+  }
+  
+  .droph3 {
+    border: none;
+    cursor: pointer;
+  }
+  .droph3:hover {
+    border: none;
+    cursor: pointer;
+    color: #8ec038;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 240px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-align: left;
+    border-radius:20px;
+    margin-left: -65px;
+    margin-top: 20px;
+  }
+  
+  .dropdown-content a {
+    display: block;
+    color: black;
+    padding: 12px;
+    text-decoration: none;
+    margin-left: 15px;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown-content a:hover{
+    margin: auto;
+    color: white;
+    background-color:#8ec038;
+    border-radius:20px;
+    width:190px;
+  }
+  
+  .dropdown-content a:last-child{
+      margin-bottom:20px;
+  }
+  
+  #container1{
+    display: flex;
+    background-color: #282834;
+    height: 500px;
+    justify-content:space-around;
+    font-family: "Fira Sans",serif; 
+  }
+  
+  #container1>div{
+    margin-top: 70px;
+    width: 200px;
+    justify-content: center; 
+  }
+  
+  #desc{
+    color:white;
+    cursor: pointer;
+    width: 120px;
+  }
+  #dispicon{
+    color: #8ec038;
+    cursor: pointer;
+    font-size:12px;
+  }
+  #dispicon1{
+    font-size:10px;
+  }
+  #dispicon1:hover{
+    color: #8ec038;
+  }
+  
+  #text{
+    color: #ffffffa6;
+    font-family: 'Open sans',sans-serif;
+    font-size:14px;
+    margin-top:30px;
+    margin-bottom: 40px;
+    text-align:left;
+  }
+  #imgtrio{
+    
+    width: 150px;
+    display: flex;
+    justify-content:space-around;
+  }
+  #imgtrio > i{
+    font-size:25px;
+    color:#8ec038;
+    
+  }
+  
+  #footlogo{
+    width: 150px;
+    height:76px;
+  }
+  
+  #contact{
+    color:white;
+  }
+  
+  #log{
+    color:#8ec038;
+  }
+  
+  #foot > h5{
+    padding-left: 40px;
+  }
+  
+  #expl{
+    color:#8ec038;
+  }
+  .green{
+    color:#8ec038;
+  }
