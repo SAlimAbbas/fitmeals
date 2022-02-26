@@ -1,0 +1,126 @@
+body{
+    font-family: 'Fira Sans', sans-serif;
+    /* font-family: 'Fira Sans Condensed', sans-serif; */
+}
+#scrollbar{
+    background-size: cover;
+    background:linear-gradient(rgba(14, 13, 13, 0.5), rgba(0, 0, 0, 0.5)), url(https://www.fitmeals.co.in/wp-content/uploads/2021/06/jennahazelphotography-brownie-bites-well-vegan-0627@2x-2.jpg);
+    background-attachment: fixed;
+    /* background-color: var(--black); */
+    height: 370px;
+    text-align: center;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 0;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: 50% 0px;
+    background-size: cover;
+     border: 0 none;  
+     opacity: 0.9;
+     filter: brightness(30%);
+     filter: drop-shadow(16px 16px 20px black);       
+    filter: contrast(90%) 
+}
+
+#info {
+    margin-top: -27px;
+    background-color:grey;
+    text-align: center;
+    justify-content:space-around;
+}
+#article{
+    display:flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 300px;
+    background-color:grey;
+    justify-content:space-around;
+}
+
+#para{
+    margin-top:-40px;
+    font-family:'open sans'sans-serif;
+    font-style: italic;
+    font-size: 18px;
+}
+
+#head1{
+    color:#8ec038;
+    font-size:100px;
+    margin-top:-15px;
+}
+
+#image{
+    width: 200px;
+    height:200px;
+    border-radius:50%;
+    border:5px solid white;
+}
+
+#modal{
+    text-align: center;
+    width: 95%;
+    margin: auto;
+    margin-top:-33px;
+    background-color:#f3f5ed;
+    height: 500px
+    
+}
+
+#modal > h1{
+    padding-top:100px;
+}
+#gr{
+    margin:auto;
+    width:95%;
+    height:210px;
+    border-radius:20px;
+    border: 2px solid #8ec038;
+}
+
+#head2{
+    font-family: 'Fira Sans', sans-serif;
+    font-size:40px;
+    font-weight: bold;
+    padding-top:100px;
+    padding-bottom: 50px;
+}
+
+#ptag{
+    font-family: 'Open Sans', sans-serif;
+    color:#f3f5ed;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+    box-sizing: border-box;
+    padding-bottom: 50px;
+}
+#head{
+    font-family: 'Sacramento', cursive;
+    color:#292d35;
+    font-size:40px;
+    padding-top:50px;
+    font-weight:lighter;
+}
+@media only screen and (min-width: 454px) and (max-width:872px) {
+    #article{
+        height:600px;
+    }
+    #modal{
+        height:600px;
+    }
+ }
+ @media only screen and (min-width:50px) and (max-width:453px) {
+    #article{
+        height:1200px;
+    }
+    #gr{
+        height:370px;
+    }
+    #modal{
+        height:700px;
+    }
+ }
