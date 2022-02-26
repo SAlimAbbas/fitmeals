@@ -5,151 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-    <style>
-        body{
-            padding: 0;
-            margin: 0;
-        }
-        .container{
-            width: 100%;
-            height: 300px;
-            background-color: #292d35;
-        }
-       .container> p{
-            font-size: 50px;
-            color:#ffffff;
-            font-family: "Open Sans, sans-serif";
-            text-align: center;
-            padding: 130px 0;
-           /* line-height: 28px; */
-            /* font-family: sans-serif; */
-            font-weight: bold;
-        }
-
-        .content{
-            display: flex;
-            justify-content: space-between;
-            margin-top: 50px;
-        }
-        .categories{
-            width: 28%;
-            height:600px;
-            /* background-color: aqua; */
-            
-        }
-        .products{
-            width: 70%;
-            /* height: 600px; */
-            height:auto;
-           
-            /* background-color: black; */
-            /* margin: auto; */
-            
-        }
-        .prodcont{
-            margin-top: 20px;
-        }
-        .cat{
-            margin-top: 50px;
-            margin-left: 20px;
-        }
-        hr{
-            height: 5px;
-            background-color:#8ec038; ;
-        }
-        .cat>p{
-            font-size: 20px;
-            font-family: sans-serif;
-            font-weight: bold;
-            line-height: 5px;
-            
-        }
-        .smallline{
-            height: 2px;
-            background-color: aliceblue;
-            
-        }
-        li{
-            font-family: "sans-serif";
-            font-weight: bold;
-            font-size: 20px;
-        }
-        .prodcont{
-            display: grid;
-            grid-template-rows: repeat(2,1fr);
-            grid-template-columns: repeat(3,1fr);
-          
-             row-gap: 15px; 
-            column-gap: 15px; 
-            text-align: center;
-         
-        }
-        .almond{
-            text-align: center;
-            transition: 1s;
-        }
-
-        .foodimg{
-            display: block;
-
-
-        }
-        .foodimg:hover{
-            transform: scale(0.9);
-            z-index: 2;
-        }
-        /* p{
-            padding: 0;
-            margin: 0;
-        } */
-
-        .buttonselect{
-            width: 60%;
-             background-color: red; 
-             color: aliceblue;
-              height: 50px;
-               border-radius: 20px;
-               font-family: sans-serif;
-               font-weight: bold;
-               font-size: 18px;
-
-        }
-        .buttonselect:hover{
-            background-color: #8ec038;
-        }
-        .readmore{
-            color: #8ec038;
-        }
-        .readmore:hover{
-            color: black;
-        }
-        .prodname{
-            color:#292d35; 
-            font-family:sans-serif;
-        }
-        .prodname:hover{
-            color: #8ec038;
-        }
-        .desc{
-            color: #292d35;
-        }
-        .price{
-            text-align: center; color: red; font-size: 30px;
-        }
-        li:hover{
-            color: #8ec038;
-        }
-
-        .end1{
-            width: 100px;
-            height: 100px;
-            background-color: #8ec038;
-            border-radius: 50%;
-            /* justify-content: center; */
-        }
-       
-    </style>
+    <link rel="stylesheet" href="vegan.css"> 
 </head>
 <body>
     <div class="container">
@@ -278,5 +134,52 @@
         </div>
 
     </div>
+    <div id="container1">
+        <div>
+            <div class="">	
+              <a class="logo" href="index.html">
+                <img id="footlogo" src=https://www.fitmeals.co.in/wp-content/uploads/2019/06/logo-white.png alt="Fitmeals">
+              </a>
+            </div>
+              <div>
+                <p id="text"> Fitmeals culinary team consists of very passionate and skilled chefs.Our team is well versed in nutrition and all our menus and plans are designed by qualified nutrition experts.</p>
+            </div>
+            <div id="imgtrio">
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
+        <div id="explore">
+            <h1 id="expl">Explore</h1>
+            <h4 id="desc"><i id="dispicon" class="fa-solid fa-angle-right"></i> Home</h4>
+            <h4 id="desc"><i id="dispicon" class="fa-solid fa-angle-right"></i> Meal Plan</h4>  
+        </div>
+        <div id="explore">
+          <h1 id="expl">Links</h1>
+          <h4 id="desc"><i id="dispicon" class="fa-solid fa-angle-right"></i> About Us</h4>
+          <h4 id="desc"><i id="dispicon" class="fa-solid fa-angle-right"></i> Blog</h4>
+          <h4 id="desc"><i id="dispicon" class="fa-solid fa-angle-right"></i> FAQ</h4>  
+          <h4 id="desc"><i id="dispicon" class="fa-solid fa-angle-right"></i> Testimonials</h4>  
+          </div>
+        <div id="contact">
+          <h1 id="expl">Contact</h1>
+                <div id="foot">
+                    <i id="log" class="fa-solid fa-phone-volume "></i>
+                    <b class="green">Call Us :</b>
+                    <h5>9100347480</h5>
+                    <h5>9963697412</h5>
+                </div>
+                <div id="foot">
+                    <i id="log" class="fa-solid fa-envelope"></i>
+                    <b class="green">Email Us :</b>
+                    <h5>fitmealsindia@gmail.com</h5>
+                </div>
+                <div id="foot">
+                    <i id="log" class="fa-solid fa-location-dot"></i>
+                    <b class="green">Our Location</b>
+                    <h5>Banjara Hills, Road no.5, Hyderabad</h5>
+                </div>
+          </div>
 </body>
 </html>
