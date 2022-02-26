@@ -1,6 +1,7 @@
 var cartDetails = JSON.parse(localStorage.getItem("meallocal"))||[];
 console.log(cartDetails);
 var subtotal=0;
+var sum=0;
 cartDetails.filter(function (elem, index) {
   var row = document.createElement("tr");
 
@@ -73,7 +74,7 @@ cartDetails.filter(function (elem, index) {
 
 var discount=document.querySelector("#tdata").innerText =subtotal;
 
-document.querySelector("#tdata3").innerText=subtotal+50;
+
 
 function promo()
 {
@@ -91,3 +92,78 @@ function promo()
   }
 
 }
+
+var bothsum=0;
+// console.log(bothsum);
+var cartproducts=JSON.parse(localStorage.getItem("CartItems"))
+console.log(cartproducts);
+
+  function displayData(cartproducts) {
+    document.querySelector("#container").innerHTML="";
+    cartproducts.map(function (data,index) {
+            
+      var mainDiv =document.createElement("div");
+
+      var img = document.createElement("img");
+      img.setAttribute("src", data.image_url);
+      img.setAttribute("style","width:250px;height:250px;")
+
+      var name = document.createElement("p");
+      name.innerText = data.name;
+
+    
+      var price = document.createElement("p");
+      price.innerText = data.price+" " + data.quant;
+
+  
+
+      var cart = document.createElement("button");
+      cart.innerText = "Add Qty";
+
+      cart.addEventListener("click", function () {
+        incrementQuantity(index);
+      });
+
+      var btn = document.createElement("button");
+      btn.innerText = "Remove Qty";
+
+      btn.addEventListener("click", function () {
+        decrementQuantity(index);
+      });
+
+      mainDiv.append(img, name, price,cart,btn);
+
+      document.querySelector("#showCart").append(mainDiv);
+    });
+  }
+  displayData(cartproducts);
+  
+  totalPrice();
+function totalPrice()
+{
+            var total =cartproducts.reduce(function(acc, item) {
+            return acc + (item.price*item.quant);
+            
+},0)
+     bothsum= document.querySelector("#tdata").innerText =total+subtotal;
+     sum=bothsum;
+        }
+    function incrementQuantity(index) {
+        console.log(index)
+        cartproducts[index].quant++;
+        console.log(cartproducts)
+        localStorage.setItem("CartItems", JSON.stringify(cartproducts));
+        displayData(cartproducts);
+        totalPrice()
+    }
+    function decrementQuantity(index) {
+        cartproducts[index].quant--;
+        localStorage.setItem("CartItems", JSON.stringify(cartproducts));
+        displayData(cartproducts);
+        totalPrice()
+    }
+    function paymentPage(){
+        window.location.href="payment.html"
+    }
+
+    document.querySelector("#tdata3").innerText=sum+50;

@@ -158,6 +158,15 @@ main{
   border-radius: 20px;
 }
 
+#showCart{
+  display: flex;
+  justify-content:space-around;
+  border:10px solid grey;
+  margin: auto;
+  padding:20px 0px 20px 0px;
+  box-sizing: border-box;
+}
+
 #container1{
   margin-top:50px;
   display: flex;
