@@ -1,0 +1,35 @@
+.h1style{
+    font-size: 80px; font-family: sans-serif; color: black; margin: auto; padding-left: 600px; padding-top: 80px;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+.account{
+    width: 100%;
+    height:300px;
+    background-image: url("https://www.fitmeals.co.in/wp-content/uploads/2018/02/inner-page.jpg");
+    opacity: 0.8;
+    
+
+}
+.log{
+    margin-top: 40px;
+   
+  
+}
+.box{
+    width: 50%;
+    height: 330px;
+    border: 1px solid black;
+    margin: auto;
+}
+#myform{
+    text-align: center;
+}
+.quest{
+    font-size: 20px; font-family: sans-serif; text-align: left; margin-left: 5%
+}
+.area{
+    width: 90%; height: 50px; border-radius: 20px;
+}

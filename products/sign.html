@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<<<<<<< Updated upstream
+ <link rel="stylesheet" href="sign.css">
+</head>
+<body>
+    <div class="account">
+        <h1 style="font-size: 80px; font-family: sans-serif; color: black; margin: auto; padding-left: 600px; padding-top: 80px;">Sign In</h1>
+=======
+  <style>
+      body{
+          padding: 0;
+          margin: 0;
+      }
+      .account{
+          width: 100%;
+          height:300px;
+          background-image: url("https://www.fitmeals.co.in/wp-content/uploads/2018/02/inner-page.jpg");
+          opacity: 0.8;
+          
+
+      }
+      .log{
+          margin-top: 40px;
+         
+        
+      }
+      .box{
+          width: 50%;
+          height: 500px;
+          border: 1px solid black;
+          margin: auto;
+      }
+      #myform{
+          text-align: center;
+      }
+  </style>
+</head>
+<body>
+    <div class="account">
+        <h1 style="font-size: 80px; font-family: sans-serif; color: aqua; margin: auto; padding-left: 600px; padding-top: 80px;">Sign In</h1>
+>>>>>>> Stashed changes
+       
+
+    </div>
+    <div class="log"> 
+        <h1 style="text-align: center;">Sign In</h1>
+        <div class="box">
+            <form action="" id="myform">
+<<<<<<< Updated upstream
+                <p  class="quest" > Name</p>
+                <input type="email" class="inp" id="user">
+               
+                <p class="quest" > Email Id</p>
+                <input type="email" class="inp" id="user">
+
+
+                <p class="quest" > Password</p>
+                <input type="password" class="inp"id="pass"> <br>
+
+                <p class="quest" > Confirm Password</p>
+                <input type="password" class="inp" id="confirmpass"> <br>
+                <input type="submit" value="Sign In" class="sub"> 
+=======
+               
+                <p style="font-size: 20px; font-family: sans-serif; text-align: left; margin-left: 5%;" > Username or Id</p>
+                <input type="email" style="width: 90%; height: 50px; border-radius: 20px;"id="user">
+
+
+                <p style="font-size: 20px; font-family: sans-serif; text-align: left; margin-left: 5%;" > Password</p>
+                <input type="password" style="width: 90%; height: 50px; border-radius: 20px;"id="pass"> <br>
+
+                <p style="font-size: 20px; font-family: sans-serif; text-align: left; margin-left: 5%;" > Password</p>
+                <input type="password" style="width: 90%; height: 50px; border-radius: 20px;" id="confirmpass"> <br>
+                <input type="submit" value="Log In" style="background-color: red; color: white; height: 40px; border-radius: 15px;margin-top: 20px; width: 180px;"> 
+>>>>>>> Stashed changes
+            </form>
+
+        </div>
+    </div>
+</body>
+
+<<<<<<< Updated upstream
+<script src="sign.js"></script>
+=======
+<script>
+    //    localStorage.clear()
+    document.getElementById("myform").addEventListener("submit",get)
+ 
+    var data=JSON.parse(localStorage.getItem("logindata"))||[];
+    function get(event){
+        event.preventDefault();
+        var email=document.getElementById("user").value;
+        var Password=document.getElementById("pass").value;
+        var  confirm=document.getElementById("confirmpass").value;
+       
+            
+         var obj={
+            email:email,
+            Password:Password,
+            confirm:confirm
+            }
+            data.push(obj)
+            localStorage.setItem("logindata",JSON.stringify(data))
+        
+      
+    }
+
+    
+</script>
+>>>>>>> Stashed changes
+</html>
