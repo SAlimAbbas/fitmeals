@@ -1,11 +1,11 @@
 #container {
 
 
-    background-image: url("https://www.fitmeals.co.in/wp-content/uploads/2018/02/SLIDE_02.jpg") ;
+    background-image: url("https://www.fitmeals.co.in/wp-content/uploads/2018/02/inner-page.jpg") ;
     background-size: cover;
     background-attachment: fixed;
     /* background-color: var(--black); */
-    height: 340px;
+    height: 360px;
     /* margin: 0; */
     text-align: center;
     display: flex; 
@@ -17,9 +17,9 @@
     background-position: 50% 0px;
     background-size: cover;
     border: 0 none;
-    opacity: 0.8;   
-    filter: contrast(90%);
-    filter: grayscale(10%)
+    opacity: 0.9;   
+    filter: contrast(100%);
+    filter: grayscale(20%)
   }
 
   #container > h1 {

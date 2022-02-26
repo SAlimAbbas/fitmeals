@@ -1,4 +1,4 @@
-var cartDetails = JSON.parse(localStorage.getItem("meallocal"));
+var cartDetails = JSON.parse(localStorage.getItem("meallocal"))||[];
 console.log(cartDetails);
 var subtotal=0;
 cartDetails.filter(function (elem, index) {

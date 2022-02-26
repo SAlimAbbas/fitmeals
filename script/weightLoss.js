@@ -3,6 +3,16 @@
         window.location.href = "orderWeightWeek1.html";
     });
 
+document.querySelector("#orderNowBtn2").addEventListener("click",function()
+{
+        window.location.href = "orderWeightWeek2.html";
+});
+document.querySelector("#sample").addEventListener("click",function()
+{
+  window.location.href ="https://raw.githubusercontent.com/neetugond/Fitmeal-website/main/image/view_sample_menu.jpeg";
+});
+
+
     var slideIndex = 0;
     showSlides();
     
