@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
   <style>
-<<<<<<< Updated upstream
   
     
   </style>
@@ -15,39 +14,6 @@
 <body>
     <div class="account">
         <h1 class="h1style">Log In</h1>
-=======
-      body{
-          padding: 0;
-          margin: 0;
-      }
-      .account{
-          width: 100%;
-          height:300px;
-          background-image: url("https://www.fitmeals.co.in/wp-content/uploads/2018/02/inner-page.jpg");
-          opacity: 0.8;
-          
-
-      }
-      .log{
-          margin-top: 40px;
-         
-        
-      }
-      .box{
-          width: 80%;
-          height: 350px;
-          border: 1px solid black;
-          margin: auto;
-      }
-      #myform{
-          text-align: center;
-      }
-  </style>
-</head>
-<body>
-    <div class="account">
-        <h1 style="font-size: 80px; font-family: sans-serif; color: aqua; margin: auto; padding-left: 600px; padding-top: 80px;">Log In</h1>
->>>>>>> Stashed changes
        
 
     </div>
@@ -56,8 +22,7 @@
         <div class="box">
             <form action="" id="myform">
                
-<<<<<<< Updated upstream
-                <p  class="quest" > Username or Id</p>
+                <p  class="quest" > Email Id</p>
                 <input type="email"  class="area" id="user">
 
 
@@ -65,44 +30,11 @@
                 <input type="password" class="area" id="pass"> <br>
 
             
-=======
-                <p style="font-size: 20px; font-family: sans-serif; text-align: left; margin-left: 5%;" > Username or Id</p>
-                <input type="text" style="width: 90%; height: 50px; border-radius: 20px;" id="user">
-
-
-                <p style="font-size: 20px; font-family: sans-serif; text-align: left; margin-left: 5%;"> Password</p>
-                <input type="password" style="width: 90%; height: 50px; border-radius: 20px;" id="pass"> <br>
->>>>>>> Stashed changes
                 <input type="submit" value="Log In" style="background-color: red; color: white; height: 40px; border-radius: 15px;margin-top: 20px; width: 180px;"> 
             </form>
 
         </div>
     </div>
 </body>
-<<<<<<< Updated upstream
 <script src="login.js"></script>
-=======
-
-<script>
-    document.getElementById("myform").addEventListener("submit",get)
-    var logindata=JSON.parse(localStorage.getItem("logindata"))
-  
-    function get(event){
-        event.preventDefault();
-        var email=document.getElementById("user").value;
-        var Password=document.getElementById("pass").value;
-        logindata.map(function(elem){
-            if(elem.email==email && elem.Password==Password){
-                console.log("enter")
-            }
-          
-          
-        })
-        
-        
-       
-    }
-
-</script>
->>>>>>> Stashed changes
 </html>
