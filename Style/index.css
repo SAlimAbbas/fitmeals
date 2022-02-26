@@ -860,3 +860,19 @@ p{
 #firstimg{
    display: block;
 }
+#slideshow{
+  height: 850px;
+  width:100% ;
+  margin:auto;
+  background-color: #f3f5ed;
+  margin-bottom: -200px;
+ 
+  display: flex;
+  justify-content: center;
+}
+#slideshow>div{
+  height:400px;
+  display: flex;
+
+  margin-top: 230px;
+}
