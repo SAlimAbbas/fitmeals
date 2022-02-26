@@ -1,0 +1,159 @@
+*{
+  font-family: 'Fira Sans', sans-serif;
+}
+#container {
+    width: 100%;
+    height: 350px;
+    background-image: url("https://www.fitmeals.co.in/wp-content/uploads/2018/02/SLIDE_02.jpg") ;
+    background-size: cover;
+    background-attachment: fixed;
+    /* background-color: var(--black); */
+    height: 340px;
+    /* margin: 0; */
+    text-align: center;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    padding-bottom: 0px;
+    background-repeat: no-repeat; 
+    position: relative;
+    background-position: 50% 0px;
+    background-size: cover;
+    border: 0 none;
+    opacity: 0.8;   
+    filter: contrast(90%);
+    filter: grayscale(10%)
+  }
+
+table,
+td,
+th {
+  border: 1px solid #ddd;
+  text-align: left;
+  border: 1px solid #292d35;
+  
+}
+
+table {
+  border-collapse: collapse;
+  width: 70%;
+  margin: auto;
+  margin-top: 50px;
+}
+th{
+  border-top: 1px solid white;
+}
+
+th,
+td {
+  padding: 25px;
+  font-size: 20px;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+tr > th {
+  background-color: #292d35;
+  color: white;
+}
+tr{
+ /* border-top-left-radius: 10px; */
+ border-radius: 15px;
+}
+.product-remove{
+  border-top-left-radius: 24px;
+  border-left:1px solid white;
+
+}
+.product-subtotal{
+  border-top-right-radius: 24px;
+  border-right:1px solid white;
+}
+main{
+  margin-bottom:40px
+}
+#promoUpdate
+{
+  width: 70%;
+  margin: auto;
+  /* border :1px solid black; */
+  height: 50px;
+  /* justify-content:space-between; */
+}
+#promo{
+  height: 40px;
+  width:200px;
+  border-radius: 20px;
+  border:0.5px solid lightgrey;
+  margin-right: -45px;
+}
+.promobtn {
+  width: 147px;
+  height:40px;
+  background-color: #da2424;
+  border-radius: 20px;
+  border:0px;
+  font-weight: 600;
+  margin-right:750px;
+  font-size:14px;
+  color:white;
+
+}
+#UpdateCart{
+  width: 240px;
+  height:32px;
+  background-color: white;
+  border-radius: 20px;
+  border:0px;
+  font-weight: 600;
+  margin-right:50px;
+  font-size: 16px;
+  color:grey;
+  font-family: 'Fira Sans', sans-serif;
+  text-decoration: none;
+}
+#UpdateCart:hover,.promobtn:hover{
+  background-color: #8EC038;
+  transition: all 0.5s ease;
+}
+
+  #totalorshipping{
+  width: 70%;
+  font-size: 8px;
+  height:400px;
+  margin:auto;
+  /* display:grid; */
+  /* border: 1px solid lightgrey; */
+  margin-top:20px;
+  /* margin-bottom:40px; */
+} 
+.shippingtable{
+  background-color:white;
+  color:black;
+  border: 1px solid rgb(235, 232, 232);
+}
+#cartTotalTable{
+  width:32%;
+  margin-top:0px;
+  margin-right: 0px;
+}
+#tdata,#tdata2,#tdata3{
+  border: 1px solid rgb(245, 242, 242);
+}
+.Chkbtn{
+  width:285px;
+  height:57px;
+  background-color: #da2424;
+  border-radius: 30px;
+  border:0px;
+  font-weight: 600;
+  margin-left:73%;
+  font-size:14px;
+  color:white;
+  margin-top: 30px;
+}
+
+.quantity{
+  height:40px;
+  width:80px;
+  border-radius: 20px;
+}
