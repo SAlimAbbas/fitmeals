@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+        }
+        .container{
+            width: 100%;
+            height: 300px;
+            background-color: #292d35;
+        }
+       .container> p{
+            font-size: 50px;
+            color:#ffffff;
+            font-family: "Open Sans, sans-serif";
+            text-align: center;
+            padding: 130px 0;
+           /* line-height: 28px; */
+            /* font-family: sans-serif; */
+            font-weight: bold;
+        }
+
+        .content{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+        }
+        .categories{
+            width: 28%;
+            height:600px;
+            /* background-color: aqua; */
+            
+        }
+        .products{
+            width: 70%;
+            /* height: 600px; */
+            height:auto;
+           
+            /* background-color: black; */
+            /* margin: auto; */
+            
+        }
+        .prodcont{
+            margin-top: 20px;
+        }
+        .cat{
+            margin-top: 50px;
+            margin-left: 20px;
+        }
+        hr{
+            height: 5px;
+            background-color:#8ec038; ;
+        }
+        .cat>p{
+            font-size: 20px;
+            font-family: sans-serif;
+            font-weight: bold;
+            line-height: 5px;
+            
+        }
+        .smallline{
+            height: 2px;
+            background-color: aliceblue;
+            
+        }
+        li{
+            font-family: "sans-serif";
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .prodcont{
+            display: grid;
+            grid-template-rows: repeat(2,1fr);
+            grid-template-columns: repeat(3,1fr);
+          
+             row-gap: 15px; 
+            column-gap: 15px; 
+            text-align: center;
+         
+        }
+        .almond{
+            text-align: center;
+            transition: 1s;
+        }
+
+        .foodimg{
+            display: block;
+
+
+        }
+        .foodimg:hover{
+            transform: scale(0.9);
+            z-index: 2;
+        }
+        /* p{
+            padding: 0;
+            margin: 0;
+        } */
+
+        .buttonselect{
+            width: 60%;
+             background-color: red; 
+             color: aliceblue;
+              height: 50px;
+               border-radius: 20px;
+               font-family: sans-serif;
+               font-weight: bold;
+               font-size: 18px;
+
+        }
+        .buttonselect:hover{
+            background-color: #8ec038;
+        }
+        .readmore{
+            color: #8ec038;
+        }
+        .readmore:hover{
+            color: black;
+        }
+        .prodname{
+            color:#292d35; 
+            font-family:sans-serif;
+        }
+        .prodname:hover{
+            color: #8ec038;
+        }
+        .desc{
+            color: #292d35;
+        }
+        .price{
+            text-align: center; color: red; font-size: 30px;
+        }
+        li:hover{
+            color: #8ec038;
+        }
+
+        .end1{
+            width: 100px;
+            height: 100px;
+            background-color: #8ec038;
+            border-radius: 50%;
+            /* justify-content: center; */
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+
+       <p>Low Calorie Sauces</p>
+
+    </div>
+
+    <div class="content">
+        <div class="categories">
+            <input type="text" style="width:80%; height: 40px; border-radius: 25px; margin-left: 20px;" placeholder="Search">
+           
+            <div class="cat">
+                <p>Products Categories</p>
+               
+                <hr>
+                <ul>
+                    <li> Diet Plans </li>
+                    <hr class="smallline" noshade="0">
+                    <li> Diet Plans </li>  
+                    <hr class="smallline" noshade>
+                    <li> Diet Plans </li>
+                    <hr class="smallline">
+                </ul>
+
+                <ul style="margin-left: 30px;" type="circle">
+                    <li> Dishes</li>
+                    <hr class="smallline">
+                    <li>Fresh Bakes</li>
+                    <hr class="smallline">
+                    <li>Low calaries</li>
+                    <hr class="smallline">
+                    <li>Nut Butters</li>
+                    <hr class="smallline">
+                    <li>Vegan </li>
+                    <hr class="smallline">
+                </ul>
+                <p>Cart</p>
+                <hr>
+            </div>
+
+           
+    
+        </div>
+        <div class="products">
+            <input type="text" style="width:95%; height: 60px; border-radius: 25px; margin-left: 20px; background-color: #f3f5ed;" placeholder="Showing" disabled>
+            <div class="prodcont">
+                <div class="almond">
+                    <img src="	https://www.fitmeals.co.in/wp-content/uploads/2021/06/arrabbiata-sauce-680x900-1-360x359.jpg" class="foodimg" alt="" style="border-radius: 25px;">
+                    <h1 class="prodname">Low Calorie Sauces</h1>
+                    <p class="desc">Delectable almond butter prepared in-house,
+                         serves as the perfect guilt-free accompaniment
+                          with your healthy ...</p>
+                          <h1  class="price">$800.00</h1>
+
+                         <button  class="buttonselect" >Select Options</button>
+                         <p class="readmore">Read more</p>
+                </div>
+
+
+
+
+                <div class="almond">
+                    <img src="https://www.fitmeals.co.in/wp-content/uploads/2021/06/12-360x359.jpg" class="foodimg" alt="" style="border-radius: 25px;">
+                    <h1 class="prodname">Almond Date Chocolate</h1>
+                    <p class="desc">Delectable almond butter prepared in-house,
+                         serves as the perfect guilt-free accompaniment
+                          with your healthy ...</p>
+                          <h1  class="price">$800.00</h1>
+
+                         <button  class="buttonselect" >Select Options</button>
+                         <p class="readmore">Read more</p>
+                </div>
+<!-- -------------------------------------------------------------------------------------------------- -->
+                <div class="almond">
+                    <img src="	https://www.fitmeals.co.in/wp-content/uploads/2021/06/14-.jpg" class="foodimg" alt="" style="border-radius: 25px; height: 360px;">
+                    <h1 class="prodname">Almond Butter</h1>
+                    <p class="desc">Delectable almond butter prepared in-house,
+                         serves as the perfect guilt-free accompaniment
+                          with your healthy ...</p>
+                          <h1  class="price">$800.00</h1>
+
+                         <button  class="buttonselect" >Select Options</button>
+                         <p class="readmore">Read more</p>
+                </div>
+                <!-- ------------------------------------------------------------------------------ -->
+                <div class="almond">
+                    <img src="https://www.fitmeals.co.in/wp-content/uploads/2021/06/12-360x359.jpg" class="foodimg" alt="" style="border-radius: 25px;">
+                    <h1 class="prodname">Almond Butter</h1>
+                    <p class="desc">Delectable almond butter prepared in-house,
+                         serves as the perfect guilt-free accompaniment
+                          with your healthy ...</p>
+                          <h1  class="price">$800.00</h1>
+
+                         <button  class="buttonselect" >Select Options</button>
+                         <p class="readmore">Read more</p>
+                </div>
+                <!-- -------------------------------------------------------------------------------- -->
+                <div class="almond">
+                    <img src="https://www.fitmeals.co.in/wp-content/uploads/2021/06/DSC_0007-300x300.jpg" class="foodimg" alt="" style="border-radius: 25px; height: 362px;">
+                    <h1 class="prodname">Almond Butter</h1>
+                    <p class="desc">Delectable almond butter prepared in-house,
+                         serves as the perfect guilt-free accompaniment
+                          with your healthy ...</p>
+                          <h1  class="price">$800.00</h1>
+
+                         <button  class="buttonselect" >Select Options</button>
+                         <p class="readmore">Read more</p>
+                </div>
+                <!-- ----------------------------------------------------------- -->
+                <div class="almond">
+                    <img src="	https://www.fitmeals.co.in/wp-content/uploads/2021/05/11-360x360.jpg" class="foodimg" alt="" style="border-radius: 25px;">
+                    <h1 class="prodname">Almond Butter</h1>
+                    <p class="desc">Delectable almond butter prepared in-house,
+                         serves as the perfect guilt-free accompaniment
+                          with your healthy ...</p>
+                          <h1  class="price">$800.00</h1>
+
+                         <button  class="buttonselect" >Select Options</button>
+                         <p class="readmore">Read more</p>
+                </div>
+                <!-- -------------------------------------------------------------------------- -->            </div>
+                
+                <!-- ------------------------------------------------------------------------------- -->
+           
+        </div>
+
+    </div>
+</body>
+</html>
