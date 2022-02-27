@@ -60,6 +60,85 @@
         body{
             margin: 0;
         }
+
+        #container1{
+  margin-top:50px;
+  display: flex;
+  background-color: #282834;
+  height: 500px;
+  justify-content:space-around;
+  font-family: "Fira Sans",serif; 
+}
+
+#container1>div{
+  margin-top: 70px;
+  width: 200px;
+  justify-content: center; 
+}
+
+#desc{
+  color:white;
+  cursor: pointer;
+  width: 120px;
+}
+#dispicon{
+  color: #8ec038;
+  cursor: pointer;
+  font-size:12px;
+}
+#dispicon1{
+  font-size:10px;
+}
+#dispicon1:hover{
+  color: #8ec038;
+}
+
+#text{
+  color: #ffffffa6;
+  font-family: 'Open sans',sans-serif;
+  font-size:14px;
+  margin-top:30px;
+  margin-bottom: 40px;
+  text-align:left;
+}
+#imgtrio{
+  
+  width: 150px;
+  display: flex;
+  justify-content:space-around;
+}
+#imgtrio > i{
+  font-size:25px;
+  color:#8ec038;
+  
+}
+
+#footlogo{
+  width: 150px;
+  height:76px;
+}
+
+#contact{
+  color:white;
+}
+
+#log{
+  color:#8ec038;
+}
+
+#foot > h5{
+  font-size:12px;
+  color:white;
+  margin-top:6px;
+  padding-left: 20px;
+}
+
+#expl{
+  color:#8ec038;
+}
+.green{
+  color:#8ec038;
+}
     </style>
 </head>
 <body>
@@ -70,5 +149,52 @@
     </header>
 
     <img src="https://www.fitmeals.co.in/wp-content/uploads/2019/10/doctor-5710152_640.jpg" alt="doctor-image">
+
+    <div id="container1">
+        <div>
+            <div class="">	
+              <a class="logo" href="index.html">
+                <img id="footlogo" src=https://www.fitmeals.co.in/wp-content/uploads/2019/06/logo-white.png alt="Fitmeals">
+              </a>
+            </div>
+              <div>
+                <p id="text"> Fitmeals culinary team consists of very passionate and skilled chefs.Our team is well versed in nutrition and all our menus and plans are designed by qualified nutrition experts.</p>
+            </div>
+            <div id="imgtrio">
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
+        <div id="explore">
+            <h1 id="expl">Explore</h1>
+            <h4 id="desc"><i id="dispicon" class="fa-solid fa-angle-right"></i> Home</h4>
+            <h4 id="desc"><i id="dispicon" class="fa-solid fa-angle-right"></i> Meal Plan</h4>  
+        </div>
+        <div id="explore">
+          <h1 id="expl">Links</h1>
+          <h4 id="desc"><i id="dispicon" class="fa-solid fa-angle-right"></i> About Us</h4>
+          <h4 id="desc"><i id="dispicon" class="fa-solid fa-angle-right"></i> Blog</h4>
+          <h4 id="desc"><i id="dispicon" class="fa-solid fa-angle-right"></i> FAQ</h4>  
+          <h4 id="desc"><i id="dispicon" class="fa-solid fa-angle-right"></i> Testimonials</h4>  
+          </div>
+        <div id="contact">
+          <h1 id="expl">Contact</h1>
+                <div id="foot">
+                    <i id="log" class="fa-solid fa-phone-volume "></i>
+                    <b class="green">Call Us :</b>
+                    <h5>9100347480</h5>
+                    <h5>9963697412</h5>
+                </div>
+                <div id="foot">
+                    <i id="log" class="fa-solid fa-envelope"></i>
+                    <b class="green">Email Us :</b>
+                    <h5>fitmealsindia@gmail.com</h5>
+                </div>
+                <div id="foot">
+                    <i id="log" class="fa-solid fa-location-dot"></i>
+                    <b class="green">Our Location</b>
+                    <h5>Banjara Hills, Road no.5, Hyderabad</h5>
+                </div>
 </body>
 </html> 
