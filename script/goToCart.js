@@ -1,4 +1,4 @@
-document.querySelector(".goToCart").addEventListener("click", function()
-{
-    window.location.href="cartPage.html";
-})
+// document.querySelector(".goToCart").addEventListener("click", function()
+// {
+//     window.location.href="cartPage.html";
+// })
