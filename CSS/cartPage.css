@@ -170,7 +170,7 @@
     filter: contrast(90%);
     filter: grayscale(10%)
   }
-
+  
 table,
 td,
 th {
@@ -296,6 +296,10 @@ main{
   font-size:14px;
   color:white;
   margin-top: 30px;
+}
+.Chkbtn:hover{
+  background-color:#8EC038;
+  transition: all 0.5s ease;
 }
 
 .quantity{

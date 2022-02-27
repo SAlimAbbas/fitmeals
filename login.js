@@ -35,7 +35,7 @@ for (var i = 0; i < regUser.length; i++) {
 if (flag ==true) {
     
     document.querySelector("input[type='submit']").addEventListener("click",function(){
-            window.location.href="www.google.html";
+            window.location.href="index.html";
             // alert("Login successful")
     })
 }
