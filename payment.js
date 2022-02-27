@@ -23,13 +23,11 @@ function otpFunction(e) {
   var valid = document.getElementById("oneTmPs").value;
   if (valid == 7575) {
     alert("Payment Successful");
-    window.location.href = "Success.html"
-
-    window.location.href = "fitmeals.html";
+    window.location.href = "sucess.html";
   } else {
     alert("Invalid Otp");
   }
 }
-document.getElementById("otpSubmit").addEventListener("click", function () {
-  window.location.href = "index.html";
-});
+// document.getElementById("otpSubmit").addEventListener("click", function () {
+//   window.location.href = "index.html";
+// });
