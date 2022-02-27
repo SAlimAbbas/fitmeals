@@ -23,7 +23,7 @@ function otpFunction(e) {
   var valid = document.getElementById("oneTmPs").value;
   if (valid == 7575) {
     alert("Payment Successful");
-    alert("Thank You");
+    window.location.href = "Success.html"
 
     window.location.href = "fitmeals.html";
   } else {
@@ -31,5 +31,5 @@ function otpFunction(e) {
   }
 }
 document.getElementById("otpSubmit").addEventListener("click", function () {
-  window.location.href = "fitmeals.html";
+  window.location.href = "index.html";
 });

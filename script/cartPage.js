@@ -94,6 +94,7 @@ function promo()
 }
 
 var bothsum=0;
+
 // console.log(bothsum);
 var cartproducts=JSON.parse(localStorage.getItem("CartItems"))
 console.log(cartproducts);
@@ -119,6 +120,9 @@ console.log(cartproducts);
 
       var cart = document.createElement("button");
       cart.innerText = "Add Qty";
+      cart.onclick = function(){
+        window.location.reload();
+      }
 
       cart.addEventListener("click", function () {
         incrementQuantity(index);
@@ -126,6 +130,9 @@ console.log(cartproducts);
 
       var btn = document.createElement("button");
       btn.innerText = "Remove Qty";
+      btn.onclick = function(){
+        window.location.reload();
+      }
 
       btn.addEventListener("click", function () {
         decrementQuantity(index);
@@ -149,18 +156,23 @@ function totalPrice()
      sum=bothsum;
         }
     function incrementQuantity(index) {
-        console.log(index)
         cartproducts[index].quant++;
-        console.log(cartproducts)
         localStorage.setItem("CartItems", JSON.stringify(cartproducts));
         displayData(cartproducts);
         totalPrice()
     }
-    function decrementQuantity(index) {
+    function decrementQuantity(index)
+     {
+       if(cartproducts[index].quant>1){
         cartproducts[index].quant--;
         localStorage.setItem("CartItems", JSON.stringify(cartproducts));
         displayData(cartproducts);
         totalPrice()
+       }
+       else{
+         alert("Quantity Should Not Be 0")
+       }
+        
     }
     function paymentPage(){
         window.location.href="payment.html"
