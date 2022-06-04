@@ -19,7 +19,12 @@ This is a collaborative Project from Masai School in the Construct Week by FW-16
 Fitmeal – Healthy Food and Nutrition WordPress Theme created especially for Food Delivery, Healthy Food, Fitness Diet, Organic Food Store, Courier Service Nutritionist, Health Coach, Health Diet, Fitness Meal, Smoothie Bar and Business Lunch Delivery.
 
 ## Snapshot :
-<img src="https://www.membroz.com/wp-content/uploads/2020/03/thumb_FitMeal-home.jpg" style="width:40%;height:90%">
+<img src="https://www.membroz.com/wp-content/uploads/2020/03/thumb_FitMeal-home.jpg" style="width:50%;height:90%">
+<img src="https://user-images.githubusercontent.com/99671890/171991103-0e9699e5-bef1-4258-bbee-83d0a9297762.png" style="width:50%;height:90%">
+<img src="https://user-images.githubusercontent.com/99671890/171991133-6c18c850-b37f-4571-a3f5-e8c503c96eef.png" style="width:50%;height:90%">
+
+
+
 # Challenges :
 During the project, we divided our work among ourselves and we played our part very well.
 
